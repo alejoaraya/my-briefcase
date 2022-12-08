@@ -1,0 +1,91 @@
+.box-img {
+  filter: blur(3px);
+  background: url(../../items/bg.jpg) no-repeat center fixed;
+  background-size: cover;
+}
+
+.intro {
+  position: absolute;
+  top: 30vh;
+  width: 100%;
+}
+.intro .img {
+  background: url("../../items/myself.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+.intro .box-color {
+  align-self: center;
+  text-align: center;
+}
+.intro .box-color .text-2 {
+  color: #0D99FF;
+  font-size: 64px;
+}
+.intro .box-color .text-1 {
+  color: #FFF;
+  font-size: 36px;
+}
+
+.info-box {
+  padding-top: 5rem;
+}
+.info-box .text-about {
+  padding-left: 5rem;
+  padding-bottom: 5rem;
+}
+.info-box .text-about .btn {
+  width: 95%;
+  margin: 1rem auto;
+}
+.info-box .a {
+  padding-top: 3rem;
+}
+
+footer {
+  background: black;
+  height: 45vh;
+}
+footer .box-circle {
+  width: 25em;
+  height: 45vh;
+}
+footer .box-circle .circle {
+  border-radius: 50%;
+  width: 13em;
+  height: 13em;
+  background-color: dimgray;
+  position: relative;
+  top: 7vh;
+  margin: auto;
+}
+footer .box-circle .circle .logo {
+  border-radius: 50%;
+  width: 13em;
+  height: 13em;
+  background: url("../../items/logo.png") no-repeat center;
+  background-size: contain;
+}
+
+@font-face {
+  font-family: poppins;
+  src: url("../../items/Poppins/Poppins-Regular.ttf") format("truetype");
+}
+body {
+  font-family: poppins;
+  overflow-x: hidden;
+}
+
+/*PASS*/
+/*.active {*/
+/*    text-decoration: underline;*/
+/*}*/
+.box {
+  height: 100vh;
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

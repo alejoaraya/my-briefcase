@@ -1,0 +1,33 @@
+.box-img {
+  filter: blur(3px);
+  background: url(../../items/bg.jpg) no-repeat center fixed;
+  background-size: cover;
+}
+
+.intro {
+  position: absolute;
+  top: 30vh;
+  width: 100%;
+  .img {
+    background: url("../../items/myself.jpg") no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+  }
+  .box-color {
+    align-self: center;
+    text-align: center;
+
+    .text-2 {
+      color: #0D99FF;
+      font-size: 64px;
+    }
+    .text-1 {
+      color: #FFF;
+      font-size: 36px;
+    }
+  }
+}
+
