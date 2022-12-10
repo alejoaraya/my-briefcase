@@ -71,6 +71,24 @@
   border-radius: 2rem;
 }
 
+.info-box-contact {
+  height: 50vh;
+}
+
+.contact-area {
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 3rem;
+}
+.contact-area .contact-space {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+.contact-area .contact-space .box-contact {
+  padding-top: 3.3rem;
+  text-align: center;
+}
+
 footer {
   background: black;
   height: 45vh;
