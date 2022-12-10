@@ -33,16 +33,42 @@
 .info-box {
   padding-top: 5rem;
 }
-.info-box .text-about {
+.info-box .about-area {
   padding-left: 5rem;
   padding-bottom: 5rem;
 }
-.info-box .text-about .btn {
+.info-box .about-area .btn {
   width: 95%;
   margin: 1rem auto;
 }
-.info-box .a {
-  padding-top: 3rem;
+.info-box .icon {
+  padding-top: 3.3rem;
+}
+
+.service-area {
+  padding-left: 5rem;
+}
+
+.briefcase-area {
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 5rem;
+}
+.briefcase-area .briefcase-space {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+.briefcase-area .briefcase-space .box-briefcase {
+  height: 25vh;
+  margin-top: 2rem;
+  border: 1px solid #000;
+  border-radius: 2rem;
+}
+.briefcase-area .briefcase-space .aux {
+  margin-top: 0.2rem;
+  height: 25vh;
+  border: 1px solid #000;
+  border-radius: 2rem;
 }
 
 footer {
