@@ -45,8 +45,22 @@
   padding-top: 3.3rem;
 }
 
+.info-box-contact {
+  padding-top: 5rem;
+  height: 50vh;
+}
+
 .service-area {
   padding-left: 5rem;
+  padding-right: 5rem;
+}
+.service-area .service-space {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+.service-area .service-space .box-service {
+  padding-top: 10rem;
+  text-align: center;
 }
 
 .briefcase-area {
@@ -90,6 +104,7 @@
 }
 
 footer {
+  margin-top: 5rem;
   background: black;
   height: 45vh;
 }
