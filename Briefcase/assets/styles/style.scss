@@ -1,3 +1,4 @@
+@use 'navbar';
 @use 'intro';
 @use 'about';
 @use 'service';
@@ -15,15 +16,12 @@ body {
   overflow-x: hidden;
 }
 
-/*PASS*/
-/*.active {*/
-/*    text-decoration: underline;*/
-/*}*/
 
 .box {
   height: 100vh;
   width: 100%;
 }
+
 
 
 
