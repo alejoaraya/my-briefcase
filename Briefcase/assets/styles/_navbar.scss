@@ -24,3 +24,19 @@
 .nav-link:hover::after{
   opacity: 1;
 }
+
+//PASS
+.menu{display: none}
+
+@media (max-width: 962px) {
+  .menu{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  //.nav-item{display: none}
+
+.navbar-collapse{
+  text-align: center;
+}
+
+}

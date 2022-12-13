@@ -28,6 +28,19 @@
   opacity: 1;
 }
 
+.menu {
+  display: none;
+}
+
+@media (max-width: 962px) {
+  .menu {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .navbar-collapse {
+    text-align: center;
+  }
+}
 .box-img {
   filter: blur(3px);
   background: url(../../items/bg.jpg) no-repeat center fixed;
