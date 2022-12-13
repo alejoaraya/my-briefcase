@@ -1,3 +1,8 @@
+.box {
+  height: 100vh;
+  width: 100%;
+}
+
 .bgColor {
   transition: all 1s;
   background-color: #121212;
@@ -51,7 +56,7 @@
   font-size: 64px;
 }
 .intro .box-color .text-1 {
-  color: #FFF;
+  color: white;
   font-size: 36px;
 }
 
@@ -60,14 +65,16 @@
 }
 .info-box .about-area {
   padding-left: 5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
 }
 .info-box .about-area .btn {
+  height: 3.3rem;
   width: 95%;
   margin: 1rem auto;
+  font-size: 22px;
 }
 .info-box .icon {
-  padding-top: 3.3rem;
+  padding-top: 2.3rem;
 }
 
 .info-box-contact {
@@ -85,6 +92,7 @@
 }
 .service-area .service-space .box-service {
   padding-top: 10rem;
+  align-self: center;
   text-align: center;
 }
 
@@ -98,14 +106,14 @@
   padding-right: 8rem;
 }
 .briefcase-area .briefcase-space .box-briefcase {
-  height: 25vh;
+  height: 33vh;
   margin-top: 2rem;
   border: 1px solid #000;
   border-radius: 2rem;
 }
 .briefcase-area .briefcase-space .aux {
   margin-top: 0.2rem;
-  height: 25vh;
+  height: 33vh;
   border: 1px solid #000;
   border-radius: 2rem;
 }
@@ -124,7 +132,7 @@
   padding-right: 8rem;
 }
 .contact-area .contact-space .box-contact {
-  padding-top: 3.3rem;
+  padding-top: 3.5rem;
   text-align: center;
 }
 
@@ -158,14 +166,12 @@ footer .box-circle .circle .logo {
   font-family: poppins;
   src: url("../../items/Poppins/Poppins-Regular.ttf") format("truetype");
 }
-body {
-  font-family: poppins;
-  overflow-x: hidden;
+* {
+  font-family: "poppins";
 }
 
-.box {
-  height: 100vh;
-  width: 100%;
+body {
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,4 @@
+@use "util";
 .info-box-contact{
   padding-top: 5rem;
   height: 50vh;
@@ -12,7 +13,7 @@
 
     .box-service {
       padding-top: 10rem;
-      text-align: center;
+      @include util.center-text;
     }
   }
 

@@ -1,3 +1,5 @@
+@use "util";
+
 .box-img {
   filter: blur(3px);
   background: url(../../items/bg.jpg) no-repeat center fixed;
@@ -17,15 +19,14 @@
     margin: 0 auto;
   }
   .box-color {
-    align-self: center;
-    text-align: center;
+    @include util.center-text();
 
     .text-2 {
-      color: #0D99FF;
+      color: util.$base_color;
       font-size: 64px;
     }
     .text-1 {
-      color: #FFF;
+      color: white;
       font-size: 36px;
     }
   }
