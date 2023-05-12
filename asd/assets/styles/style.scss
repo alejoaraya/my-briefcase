@@ -1,0 +1,33 @@
+@use 'navbar';
+@use 'intro';
+@use 'about';
+@use 'service';
+@use 'briefcase';
+@use 'contact';
+@use 'footer';
+
+@font-face {
+  font-family: poppins;
+  src: url("../../items/Poppins/Poppins-Regular.ttf") format('truetype');
+}
+
+* {
+  font-family: "poppins";
+}
+
+body{
+  overflow-x: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

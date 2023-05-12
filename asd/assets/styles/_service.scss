@@ -1,0 +1,20 @@
+@use "util";
+.info-box-contact{
+  padding-top: 5rem;
+  height: 50vh;
+}
+.service-area {
+  padding-left: 5rem;
+  padding-right: 5rem;
+
+  .service-space {
+    padding-left: 8rem;
+    padding-right: 8rem;
+
+    .box-service {
+      padding-top: 10rem;
+      @include util.center-text;
+    }
+  }
+
+}

@@ -1,0 +1,24 @@
+footer{
+  margin-top: 5rem;
+  background: black;
+  height: 45vh;
+  .box-circle{
+    width: 25em;
+    height: 45vh;
+    .circle{
+      border-radius: 50%;
+      width: 13em;
+      height: 13em;
+      background-color: dimgray;
+      position:relative;  top:7vh;
+      margin:auto;
+      .logo{
+        border-radius: 50%;
+        width: 13em;
+        height: 13em;
+        background: url("../../items/logo.png")  no-repeat center;
+        background-size: contain;
+      }
+    }
+  }
+}
