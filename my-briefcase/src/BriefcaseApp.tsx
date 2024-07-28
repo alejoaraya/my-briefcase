@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router";
-import { BriefcasePage, DetailProjectPage } from "./pages";
+import { BriefcasePage, DetailProjectPage, ErrorPage } from "./pages";
 import { ContentPageLayout } from "./layout";
 
 export const BriefcaseApp = () => {
@@ -9,6 +9,7 @@ export const BriefcaseApp = () => {
         <Route path='/' element={<BriefcasePage />} />
         <Route path='/detail/:id' element={<DetailProjectPage />} />
       </Route>
+      <Route path='/*' element={<ErrorPage />} />
     </Routes>
   );
 };
