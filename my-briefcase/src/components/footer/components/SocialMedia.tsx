@@ -1,34 +1,8 @@
-import { Button } from "./ui/components/Button";
-
-export const HeroSection = () => {
+export const SocialMedia = () => {
   return (
-    <>
-      <main
-        id='home'
-        className='min-h-screen hero'
-        style={{
-          backgroundImage:
-            "url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp)",
-        }}
-      >
-        <div className='hero-overlay bg-opacity-60'></div>
-        <div className='text-center hero-content text-neutral-content'>
-          <div>
-            <h1 className='mb-5 text-6xl poppins-bold'>HI, I’M ALEJO ARAYA</h1>
-            <div className='mb-5 text-2xl'>
-              <p>
-                A Result-Oriented Web Developer building and mabnaging Websites
-                and Web
-              </p>
-              <p>
-                Aplications that leads to the success of the overwall product
-              </p>
-            </div>
-            <Button size='w-64' text='PROJECTS' url='#projects' />
-          </div>
-        </div>
-      </main>
-      <div className=' p-[10px] gap-[25px] absolute bottom-0 w-64 h-12 shadow bg-base-100 left-[610px] rounded-lg flex items-center justify-between'>
+    <nav className='flex flex-col justify-center h-full gap-'>
+      <h6 className='text-2xl text-base-100 footer-title lato-bold'>Social</h6>
+      <div className='grid grid-flow-col gap-4'>
         <a>
           <svg
             xmlns='http://www.w3.org/2000/svg'
@@ -74,6 +48,6 @@ export const HeroSection = () => {
           </svg>
         </a>
       </div>
-    </>
+    </nav>
   );
 };

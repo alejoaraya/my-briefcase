@@ -3,7 +3,7 @@ import { Logo } from "./components/Logo";
 
 export const Navbar = () => {
   return (
-    <header className='sticky top-0 left-0 z-10 shadow navbar bg-base-100'>
+    <header className='sticky top-0 left-0 z-10 shadow navbar bg-base-100 px-[139px]'>
       <Logo />
       <div className='flex-none'>
         <ul className='px-1 menu menu-horizontal '>
