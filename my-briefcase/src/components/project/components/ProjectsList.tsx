@@ -12,7 +12,7 @@ export const ProjectsList = () => {
       <ProjectItem
         url='gallery-heroes'
         description='Gallery Heroes is a successful Open-Source project that I created which have been featured on some of the biggest tech sites like CSS-Tricks, Hostinger, etc & used by thousands of developers globally'
-        image='/assets/png/chatbot-background.png'
+        image='/assets/png/heroes-background.png'
         title='Gallery Heroes - GIFS'
       />
     </div>

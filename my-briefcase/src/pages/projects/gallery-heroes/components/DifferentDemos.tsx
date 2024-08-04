@@ -1,7 +1,7 @@
 export const DifferentDemos = () => {
   return (
     <div>
-      <img src='/assets/png/chatbot-demo.png' alt='danielbot' />
+      <img src='/assets/png/heroes-demo.png' alt='danielbot' />
     </div>
   );
 };
