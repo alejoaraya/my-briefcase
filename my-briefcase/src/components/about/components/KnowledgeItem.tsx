@@ -1,18 +1,25 @@
 interface Props {
   text:
-    | "React"
-    | "NextJs"
-    | "TypeScript"
-    | "Redux"
-    | "Tailwind"
-    | "Github"
-    | "Responsive Design"
-    | "Resoult-Oriented"
-    | "Comunication"
-    | "Team work"
+    | "Adaptability"
     | "Assertive"
+    | "Comunication"
+    | "CSS"
     | "Efficient"
-    | "Adaptability";
+    | "GIT"
+    | "Github"
+    | "HTML"
+    | "JavaScript"
+    | "NextJs"
+    | "React"
+    | "Redux"
+    | "Resoult-Oriented"
+    | "Responsive Design"
+    | "SEO"
+    | "Tailwind"
+    | "Team work"
+    | "Terminal"
+    | "DaisyUI"
+    | "TypeScript";
 }
 export const KnowledgeItem = ({ text }: Props) => {
   return (

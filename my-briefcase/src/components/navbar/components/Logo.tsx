@@ -2,9 +2,11 @@ import { Avatar } from "./Avatar";
 
 export const Logo = () => {
   return (
-    <div className='flex-1'>
+    <div className='flex items-center '>
       <Avatar />
-      <a className='text-xl btn btn-ghost'>ALEJO ARAYA</a>
+      <a href='/' className='text-xl btn btn-ghost'>
+        ALEJO ARAYA
+      </a>
     </div>
   );
 };

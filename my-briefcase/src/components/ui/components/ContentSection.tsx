@@ -10,8 +10,8 @@ interface Props {
 
 export const ContentSection = ({ children, id, title, text }: Props) => {
   return (
-    <section className='py-[120px]' id={id}>
-      <div className='grid grid-rows-[auto_1fr] gap-14'>
+    <section className='pt-20 md:pt-40' id={id}>
+      <div className='grid md:grid-rows-[auto_1fr] gap-14'>
         <Title title={title} text={text} />
         {children}
       </div>

@@ -11,7 +11,7 @@ export const AboutSection = () => {
     skills mostly in terms of programming and technology'
       title='ABOUT ME'
     >
-      <div className='grid grid-cols-2 grid-rows-1 gap-20'>
+      <div className='grid grid-cols-1 grid-rows-2 gap-20 md:grid-rows-1 md:grid-cols-2'>
         <PersonalInformation />
 
         <div className='grid grid-cols-1 grid-rows-2'>

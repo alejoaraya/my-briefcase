@@ -3,7 +3,7 @@ import { Subtitle } from "../../ui";
 
 interface Props {
   children: ReactNode;
-  subtitle: "Get to know me!" | "Tecnologies" | "Soft Skills";
+  subtitle: "Get to know me!" | "Tecnologies" | "Soft Skills" | "Tools Used";
 }
 
 export const SkillsContent = ({ children, subtitle }: Props) => {

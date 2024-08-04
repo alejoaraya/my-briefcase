@@ -4,7 +4,7 @@ export const PersonalInformation = () => {
   return (
     <div className='flex flex-col gap-8'>
       <Subtitle subtitle='Get to know me!' />
-      <div className='flex flex-col gap-3'>
+      <div className='flex flex-col gap-3 text-base'>
         <p>
           I'm a Frontend Focused Web Developer building and managing the
           Front-end of Websites and Web Applications that leads to the success

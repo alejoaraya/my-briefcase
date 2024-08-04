@@ -1,15 +1,24 @@
 interface Props {
   size: "w-48" | "w-64";
-  text: "PROJECTS" | "CASE WORK" | "SUBMIT" | "CONTACT" | "CASE STUDY";
+  text:
+    | "PROJECTS"
+    | "CASE WORK"
+    | "SUBMIT"
+    | "CONTACT"
+    | "CASE STUDY"
+    | "CONTACT ME"
+    | "LIVE LINK";
   url?: string;
+  blank?: boolean;
 }
 
-export const Button = ({ size, text, url = "" }: Props) => {
+export const Button = ({ blank, size, text, url = "" }: Props) => {
   return (
     <a
+      target={blank ? "_blank" : ""}
       href={url}
       className={`${
-        size === "w-48" ? "w-48 text-base lato-bold" : "text-xl w-64"
+        size === "w-48" ? "w-48 text-base lato-bold" : "text-xl w-48 md:w-64"
       }  btn btn-primary h-14`}
     >
       {text}

@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 *{
-    font-family: Lato ;
+  font-family: Lato ;
+  scroll-behavior: smooth;
 }
 
 .lato-regular {

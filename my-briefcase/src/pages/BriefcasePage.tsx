@@ -8,13 +8,13 @@ import { ContentLayout } from "../layout";
 
 export const BriefcasePage = () => {
   return (
-    <>
+    <div>
       <HeroSection />
       <ContentLayout>
         <AboutSection />
         <ProjectsSection />
         <ContactSection />
       </ContentLayout>
-    </>
+    </div>
   );
 };

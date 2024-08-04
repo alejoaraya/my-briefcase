@@ -1,5 +1,11 @@
 interface Props {
-  subtitle: "Get to know me!" | "Tecnologies" | "Soft Skills";
+  subtitle:
+    | "Get to know me!"
+    | "Tecnologies"
+    | "Soft Skills"
+    | "Tools Used"
+    | "Project Overview"
+    | "Are you interested ?";
 }
 
 export const Subtitle = ({ subtitle }: Props) => {
