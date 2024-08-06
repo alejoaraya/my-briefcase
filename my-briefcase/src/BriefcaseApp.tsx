@@ -6,12 +6,12 @@ import { GalleryHeroesPage } from "./pages/projects/gallery-heroes/GalleryHeroes
 export const BriefcaseApp = () => {
   return (
     <Routes>
-      <Route path='' element={<ContentPageLayout />}>
+      <Route path='/' element={<ContentPageLayout />}>
         <Route path='/' element={<BriefcasePage />} />
-        <Route path='/danielbot' element={<ChatbotPage />} />
-        <Route path='/gallery-heroes' element={<GalleryHeroesPage />} />
+        <Route path='danielbot' element={<ChatbotPage />} />
+        <Route path='gallery-heroes' element={<GalleryHeroesPage />} />
+        <Route path='/*' element={<ErrorPage />} />
       </Route>
-      <Route path='/*' element={<ErrorPage />} />
     </Routes>
   );
 };
