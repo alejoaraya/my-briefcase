@@ -6,8 +6,8 @@ interface Props {
     | "DanielBot - Chatbot"
     | "Gallery Heroes - GIFS";
   subtitle:
-    | "This page contains the case study of Wilsonport Website which includes the Project Overview, Tools Used and Live Links to the official product."
-    | " A Result-Oriented Web Developer building and mabnaging Websites and Web Aplications that leads to the success of the overwall product";
+    | "This page contains the case study of the Wilsonport Website, including the Project Overview, Tools Used, and Live Links to the official product."
+    | "A result-oriented Web Developer building and managing Websites and Web Applications that lead to the overall success of the product.";
   url: string;
   title_button:
     | "PROJECTS"

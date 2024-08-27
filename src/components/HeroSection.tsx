@@ -16,7 +16,7 @@ export const HeroSection = () => {
           title_button='PROJECTS'
           url='#projects'
           title='HI, I’M ALEJO ARAYA'
-          subtitle=' A Result-Oriented Web Developer building and mabnaging Websites and Web Aplications that leads to the success of the overwall product'
+          subtitle='A result-oriented Web Developer building and managing Websites and Web Applications that lead to the overall success of the product.'
         />
       </main>
       <NavbarSocialMedia />
