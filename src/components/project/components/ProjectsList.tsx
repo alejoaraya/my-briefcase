@@ -5,9 +5,9 @@ export const ProjectsList = () => {
     <div className='grid grid-flow-row grid-cols-1 gap-10'>
       <ProjectItem
         url='project/danielbot'
-        description='This project, DanielBot, is an innovative chat-bot that connects to WhatsApp Web to automate various tasks efficiently. It stands out for its low cost and a wide range of customizable options, making it an accessible and versatile solution for businesses looking to enhance their communication through WhatsApp.'
+        description='I developed the landing page for DanielBot, an innovative chatbot that integrates with WhatsApp Web to efficiently automate tasks. DanielBot stands out for its low cost and wide range of options, offering an accessible and versatile solution for businesses looking to enhance their communication and management through WhatsApp.'
         image='/assets/png/chatbot-background.png'
-        title='DanielBot - Chatbot'
+        title='DanielBot (Chatbot) - SPA'
         buttonText='CASE WORK'
       />
       <ProjectItem

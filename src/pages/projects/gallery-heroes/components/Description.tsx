@@ -6,18 +6,22 @@ export const Description = () => {
       <Subtitle subtitle='Project Overview' />
       <div className='flex flex-col gap-3 text-lg'>
         <p>
-          Wilsonport is a multiservice logistics and transport company and I
-          created their multi-page website using my Frontend Web Development
-          skills to build their online presence and make them stand out among
-          their competitors and provide a better user experience for all types
-          of devices.
+          Welcome to the Heroes Gallery, a dynamic platform where you can
+          explore and discover the fascinating world of Marvel and DC
+          superheroes. Whether you're searching for specific characters or
+          browsing through our extensive collection, the Heroes Gallery offers
+          an engaging experience for all fans. Dive into the rich histories,
+          unique abilities, and epic stories of your favorite heroes as you
+          journey through our curated collection. This project aims to provide a
+          comprehensive and immersive resource for anyone interested in the
+          iconic figures that define the superhero universe.
         </p>
 
-        <p>
+        {/* <p>
           I took User Interface ideas by visiting different types of websites of
           the same industry and even visited platforms like dribbble to get
           inspiration for building a good User Interface.
-        </p>
+        </p> */}
         <p>Feel free to check out the Project by visiting the Live Link.</p>
       </div>
     </div>

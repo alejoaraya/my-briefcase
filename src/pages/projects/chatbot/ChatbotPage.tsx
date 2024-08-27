@@ -20,8 +20,8 @@ export const ChatbotPage = () => {
         <div className='hero-overlay bg-opacity-5'></div>
         <Presentation
           title_button='LIVE LINK'
-          subtitle='This page contains the case study of the Wilsonport Website, including the Project Overview, Tools Used, and Live Links to the official product.'
-          title='DanielBot - Chatbot'
+          subtitle='This page contains the case work  the DanielBot - Chatbot Website, including the Project Overview, Tools Used, and Live Links to the official product.'
+          title='DanielBot (Chatbot) - SPA'
           url='https://www.danielbot.com.ar/'
           blank
         />

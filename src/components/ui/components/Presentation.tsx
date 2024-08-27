@@ -3,10 +3,11 @@ import { Button } from "..";
 interface Props {
   title:
     | "HI, I’M ALEJO ARAYA"
-    | "DanielBot - Chatbot"
+    | "DanielBot (Chatbot) - SPA"
     | "Gallery Heroes - GIFS";
   subtitle:
-    | "This page contains the case study of the Wilsonport Website, including the Project Overview, Tools Used, and Live Links to the official product."
+    | "This page contains the case study the Gallery Heroes - GIFS, including the Project Overview, Tools Used, and Live Links to the official product."
+    | "This page contains the case work  the DanielBot - Chatbot Website, including the Project Overview, Tools Used, and Live Links to the official product."
     | "A result-oriented Web Developer building and managing Websites and Web Applications that lead to the overall success of the product.";
   url: string;
   title_button:

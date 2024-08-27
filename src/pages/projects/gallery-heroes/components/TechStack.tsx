@@ -5,8 +5,8 @@ export const TechStack = () => {
   return (
     <SkillsContent subtitle='Tools Used'>
       <KnowledgeItem text='React' />
-      <KnowledgeItem text='NextJs' />
-      <KnowledgeItem text='JavaScript' />
+      {/* <KnowledgeItem text='NextJs' /> */}
+      <KnowledgeItem text='TypeScript' />
       <KnowledgeItem text='Responsive Design' />
       <KnowledgeItem text='Tailwind' />
       <KnowledgeItem text='DaisyUI' />
