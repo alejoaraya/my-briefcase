@@ -20,7 +20,7 @@ export const GalleryHeroesPage = () => {
         <div className='hero-overlay bg-opacity-5'></div>
         <Presentation
           title_button='LIVE LINK'
-          subtitle='This page contains the case study of Wilsonport Website which includes the Project Overview, Tools Used and Live Links to the official product.'
+          subtitle='This page contains the case study of the Wilsonport Website, including the Project Overview, Tools Used, and Live Links to the official product.'
           title='Gallery Heroes - GIFS'
           url='https://heroes-gallery-app.netlify.app/'
           blank
