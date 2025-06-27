@@ -4,17 +4,17 @@ import {
   HeroSection,
   ProjectsSection,
 } from "../components";
+import { WorkspaceSection } from "../components/workspace/WorkspaceSection";
 import { ContentLayout } from "../layout";
 
 export const BriefcasePage = () => {
   return (
-    <div>
+    <ContentLayout>
       <HeroSection />
-      <ContentLayout>
-        <AboutSection />
-        <ProjectsSection />
-        <ContactSection />
-      </ContentLayout>
-    </div>
+      <WorkspaceSection />
+      <ProjectsSection />
+      <AboutSection />
+      <ContactSection />
+    </ContentLayout>
   );
 };

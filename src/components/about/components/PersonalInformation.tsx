@@ -6,25 +6,26 @@ export const PersonalInformation = () => {
       <Subtitle subtitle='Get to know me!' />
       <div className='flex flex-col gap-3 text-base'>
         <p>
-          I'm a Frontend-focused Web Developer, building and managing the
-          front-end of websites and web applications that lead to the success of
-          the overall product. Check out some of my work in the Projects
-          section.
+          I'm a Back-End Web Developer focused on building and maintaining the
+          server-side logic, APIs, and database architecture that power modern
+          web applications. My work ensures systems are efficient, secure, and
+          scalable.
         </p>
         <p>
-          I have experience working with agile methodologies, such as Scrum, and
-          using tools like Jira and Trello to manage projects efficiently. I
-          have collaborated with cross-functional teams to solve complex
-          challenges, applying modern web development practices to achieve
-          project goals.
+          I have experience working with agile methodologies like Scrum, using
+          tools such as Jira and Trello for effective project management. I've
+          collaborated with cross-functional teams to solve complex technical
+          challenges, applying modern development practices and clean
+          architecture principles.
         </p>
         <p>
-          I'm open to job opportunities where I can contribute, learn, and grow.
-          If you have a great opportunity that matches my skills and experience,
-          don't hesitate to contact me.
+          I'm actively seeking opportunities where I can contribute to impactful
+          back-end systems, continue learning, and grow professionally. If
+          you’re looking for someone who can deliver solid back-end solutions,
+          feel free to reach out!
         </p>
       </div>
-      <Button size='w-48' text='CONTACT' url='#contact' />
+      {/* <Button size='w-48' text='CONTACT' url='#contact' /> */}
     </div>
   );
 };

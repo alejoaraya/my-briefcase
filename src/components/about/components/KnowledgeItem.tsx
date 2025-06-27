@@ -1,25 +1,25 @@
 interface Props {
-  text:
-    | "Adaptability"
-    | "Assertive"
-    | "Comunication"
-    | "CSS"
-    | "Efficient"
-    | "GIT"
-    | "Github"
-    | "HTML"
-    | "JavaScript"
-    | "NextJs"
-    | "React"
-    | "Redux"
-    | "Resoult-Oriented"
-    | "Responsive Design"
-    | "SEO"
-    | "Tailwind"
-    | "Team work"
-    | "Terminal"
-    | "DaisyUI"
-    | "TypeScript";
+  text: string;
+  // | "Adaptability"
+  // | "Assertive"
+  // | "Comunication"
+  // | "CSS"
+  // | "Efficient"
+  // | "GIT"
+  // | "Github"
+  // | "HTML"
+  // | "JavaScript"
+  // | "NextJs"
+  // | "React"
+  // | "Redux"
+  // | "Resoult-Oriented"
+  // | "Responsive Design"
+  // | "SEO"
+  // | "Tailwind"
+  // | "Team work"
+  // | "Terminal"
+  // | "DaisyUI"
+  // | "TypeScript";
 }
 export const KnowledgeItem = ({ text }: Props) => {
   return (

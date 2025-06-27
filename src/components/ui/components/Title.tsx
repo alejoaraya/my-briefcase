@@ -1,5 +1,11 @@
 interface Props {
-  title: "ABOUT ME" | "CONTACT" | "PROJECTS";
+  title:
+    | "ABOUT ME"
+    | "CONTACT"
+    | "PROJECTS"
+    | "PROFESSIONAL EXPERIENCE"
+    | "LET'S PROGRAMING TOGETHER"
+    | "LET'S WORK TOGETHER";
   text: string;
 }
 

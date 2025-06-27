@@ -3,8 +3,14 @@ import { Title } from "./Title";
 
 interface Props {
   children: ReactNode;
-  id: "about" | "contact" | "projects" | "home";
-  title: "ABOUT ME" | "CONTACT" | "PROJECTS";
+  id: "about" | "contact" | "projects" | "home" | "workspace";
+  title:
+    | "ABOUT ME"
+    | "CONTACT"
+    | "PROJECTS"
+    | "PROFESSIONAL EXPERIENCE"
+    | "LET'S PROGRAMING TOGETHER"
+    | "LET'S WORK TOGETHER";
   text: string;
 }
 

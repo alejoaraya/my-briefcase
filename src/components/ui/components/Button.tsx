@@ -7,7 +7,11 @@ interface Props {
     | "CONTACT"
     | "CASE STUDY"
     | "CONTACT ME"
-    | "LIVE LINK";
+    | "LIVE LINK"
+    | "LinkedIn"
+    | "Code"
+    | "Preview"
+    | "Contactame";
   url?: string;
   blank?: boolean;
 }

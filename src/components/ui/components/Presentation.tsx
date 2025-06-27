@@ -8,7 +8,7 @@ interface Props {
   subtitle:
     | "This page contains the case study the Gallery Heroes - GIFS, including the Project Overview, Tools Used, and Live Links to the official product."
     | "This page contains the case work  the DanielBot - Chatbot Website, including the Project Overview, Tools Used, and Live Links to the official product."
-    | "A result-oriented Web Developer building and managing Websites and Web Applications that lead to the overall success of the product.";
+    | "A Back-End Developer focused on building robust, scalable, and secure server-side solutions that power modern web applications.";
   url: string;
   title_button:
     | "PROJECTS"
