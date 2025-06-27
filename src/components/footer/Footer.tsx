@@ -1,6 +1,3 @@
-import { Avatar } from "../navbar/components/Avatar";
-import { SocialMedia } from "./components/SocialMedia";
-
 export const Footer = () => {
   return (
     // <footer className='px-5 mt-10 md:px-[139px] footer gap-0 flex flex-col [&>*]:w-full [&>p]:justify-center bg-primary text-base-100'>

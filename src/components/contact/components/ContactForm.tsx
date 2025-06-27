@@ -1,24 +1,19 @@
-import { useFormik } from "formik";
-import { Input, Textarea } from "../../ui";
-import { SocialMediaForm } from "./SocialMediaForm";
-import { messageSchema } from "../../../schema";
-
 export const ContactForm = () => {
-  const { values, handleSubmit, handleChange, errors, resetForm, touched } =
-    useFormik({
-      initialValues: {
-        sender: "",
-        email: "",
-        message: "",
-      },
-      validate: (values) => {
-        messageSchema.parse(values);
-      },
-      onSubmit: (values) => {
-        alert(JSON.stringify(values));
-        resetForm();
-      },
-    });
+  // const { values, handleSubmit, handleChange, errors, resetForm, touched } =
+  //   useFormik({
+  //     initialValues: {
+  //       sender: "",
+  //       email: "",
+  //       message: "",
+  //     },
+  //     validate: (values) => {
+  //       messageSchema.parse(values);
+  //     },
+  //     onSubmit: (values) => {
+  //       alert(JSON.stringify(values));
+  //       resetForm();
+  //     },
+  //   });
 
   return (
     // <div className='flex items-center justify-center mb-28 md:mb-36'>

@@ -1,4 +1,4 @@
-import { Button, Subtitle } from "../../ui";
+import { Subtitle } from "../../ui";
 
 export const PersonalInformation = () => {
   return (

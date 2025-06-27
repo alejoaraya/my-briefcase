@@ -1,5 +1,3 @@
-import { Button } from "../../ui";
-
 import { HiLink } from "react-icons/hi2";
 import { GrGithub, GrReactjs } from "react-icons/gr";
 import { RiTailwindCssFill } from "react-icons/ri";
@@ -18,8 +16,8 @@ export const ProjectItem = ({
   image,
   title,
   description,
-  buttonText,
-}: Props) => {
+}: // buttonText,
+Props) => {
   return (
     <div className='grid grid-cols-1 gap-5 lg:gap-16 md:grid-cols-2 place-items-center'>
       <div className='w-full transition duration-500 border border-gray-300 rounded-3xl bg-base-200 hover:scale-105 hover:border-primary '>

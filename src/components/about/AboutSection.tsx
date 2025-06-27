@@ -1,8 +1,5 @@
-import { Logo } from "../navbar/components/Logo";
 import { ContentSection } from "../ui";
 import { PersonalInformation } from "./components/PersonalInformation";
-import { SoftSkillsList } from "./components/SoftSkillsList";
-import { TechnologyList } from "./components/TechnologyList";
 
 export const AboutSection = () => {
   return (
