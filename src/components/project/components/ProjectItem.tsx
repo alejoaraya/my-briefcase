@@ -29,25 +29,32 @@ Props) => {
       </div>
       <div className='flex flex-col gap-5'>
         <h1 className='text-xl poppins-bold'>{title}</h1>
-        <div className='flex flex-row gap-2'>
-          <div className='badge badge-primary'>
+        <div className='flex flex-wrap gap-2 flex-'>
+          <div className='border badge badge-primary badge-soft border-primary'>
             <GrReactjs />
             React.ts
           </div>
-          <div className='badge badge-primary'>
+          <div className='border badge badge-primary badge-soft border-primary'>
+            <GrReactjs />
+            Figma
+          </div>
+          <div className='border badge badge-primary badge-soft border-primary'>
+            <GrReactjs />
+            TypeScript
+          </div>
+          <div className='border badge badge-primary badge-soft border-primary'>
             <RiTailwindCssFill />
             Tailwind CSS
           </div>
-          not yet
         </div>
         <div className='flex flex-col gap-8'>
           <p className='text-lg opacity-70'>{description}</p>
           <div className='flex flex-row gap-3'>
-            <button className='border border-primary btn btn-primary btn-soft'>
+            <button className='border border-primary btn btn-primary '>
               <GrGithub />
               Code
             </button>
-            <button className='border border-primary btn btn-primary btn-soft'>
+            <button className='border border-primary btn btn-primary '>
               <HiLink /> Preview
             </button>
             {/* <Button text={"Code"} url={url} />

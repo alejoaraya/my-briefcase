@@ -75,12 +75,8 @@ export const ContactForm = () => {
     <div className='mb-32 place-items-center'>
       <fieldset className=' fieldset'>
         <div className='flex gap-3'>
-          <input
-            type='text'
-            className=' input'
-            placeholder='Enter your email'
-          />
-          <button className='btn btn-primary'>send</button>
+          <input type='text' className=' input' placeholder='Ingresar mail' />
+          <button className='btn btn-primary'>Enviar</button>
         </div>
       </fieldset>
     </div>

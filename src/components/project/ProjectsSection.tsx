@@ -7,7 +7,7 @@ export const ProjectsSection = () => {
       id='projects'
       // text='Here you will find some of the personal and client projects that I have created, with each project containing its own case study.'
       text=''
-      title='PROJECTS'
+      title='PROYECTOS'
     >
       <ProjectsList />
     </ContentSection>

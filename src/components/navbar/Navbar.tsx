@@ -11,16 +11,16 @@ export const Navbar = () => {
       <div className='flex-none'>
         <ul className='px-1 menu menu-horizontal '>
           <li>
-            <LinkItem text='WORK' url='workspace' />
+            <LinkItem text='INICIO' url='home' />
           </li>
           <li>
-            <LinkItem text='PROJECTS' url='projects' />
+            <LinkItem text='EXPERIENCIA' url='workspace' />
           </li>
           <li>
-            <LinkItem text='ABOUT' url='about' />
+            <LinkItem text='PROYECTOS' url='projects' />
           </li>
           <li>
-            <LinkItem text='CONTACTS' url='contact' />
+            <LinkItem text='SOBRE MÍ' url='about' />
           </li>
           <li>
             <label className='swap swap-rotate'>

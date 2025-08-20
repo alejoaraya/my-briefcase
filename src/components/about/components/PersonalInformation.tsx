@@ -1,28 +1,26 @@
-import { Subtitle } from "../../ui";
-
 export const PersonalInformation = () => {
   return (
     <div className='flex flex-col gap-8'>
-      <Subtitle subtitle='Get to know me!' />
       <div className='flex flex-col gap-3 text-base'>
         <p>
-          I'm a Back-End Web Developer focused on building and maintaining the
-          server-side logic, APIs, and database architecture that power modern
-          web applications. My work ensures systems are efficient, secure, and
-          scalable.
+          Soy un Desarrollador Front-End con experiencia en React, integración
+          de APIs y optimización de interfaces web. Me apasiona crear
+          aplicaciones intuitivas, eficientes y con atención al detalle,
+          aplicando buenas prácticas de código y un enfoque en la experiencia
+          del usuario.
         </p>
         <p>
-          I have experience working with agile methodologies like Scrum, using
-          tools such as Jira and Trello for effective project management. I've
-          collaborated with cross-functional teams to solve complex technical
-          challenges, applying modern development practices and clean
-          architecture principles.
+          He trabajado en equipos aplicando metodologías ágiles y herramientas
+          como Jira y Trello para la gestión de proyectos. Además de mi
+          experiencia en desarrollo web, cuento con conocimientos en soporte
+          técnico y mantenimiento de computadoras, lo que me permite tener una
+          visión integral de los sistemas y su funcionamiento.
         </p>
         <p>
-          I'm actively seeking opportunities where I can contribute to impactful
-          back-end systems, continue learning, and grow professionally. If
-          you’re looking for someone who can deliver solid back-end solutions,
-          feel free to reach out!
+          Estoy en búsqueda de nuevas oportunidades donde pueda aportar mis
+          habilidades, seguir aprendiendo y crecer profesionalmente. Si estás
+          buscando a alguien con motivación, capacidad de adaptación y pasión
+          por la tecnología, no dudes en contactarme.
         </p>
       </div>
       {/* <Button size='w-48' text='CONTACT' url='#contact' /> */}

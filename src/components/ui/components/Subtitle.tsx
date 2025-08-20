@@ -1,6 +1,7 @@
 interface Props {
   subtitle:
     | "Get to know me!"
+    | "¡Conoceme!"
     | "Tecnologies"
     | "Soft Skills"
     | "Tools Used"

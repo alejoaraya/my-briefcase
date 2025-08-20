@@ -7,7 +7,7 @@ export const AboutSection = () => {
       id='about'
       // text='Here you will find more information about me, what I do, and my current skills, primarily in back-end development and technology.'
       text=''
-      title='ABOUT ME'
+      title='SOBRE MÍ'
     >
       <div className='grid grid-cols-1 grid-rows-2 gap-20 md:grid-rows-1 md:grid-cols-2'>
         <PersonalInformation />
