@@ -1,3 +1,6 @@
+import { GrFormNextLink } from "react-icons/gr";
+import { Link } from "react-router-dom";
+
 export const Footer = () => {
   return (
     // <footer className='px-5 mt-10 md:px-[139px] footer gap-0 flex flex-col [&>*]:w-full [&>p]:justify-center bg-primary text-base-100'>
@@ -18,13 +21,21 @@ export const Footer = () => {
     //     </a>
     //   </p>
     // </footer>
-    <footer className=' footer flex [&>*]:w-full [&>p]:justify-center '>
-      <p className='flex gap-1 py-10'>
-        © Copyright {new Date().getFullYear()}. Made by
-        <a className='hover:underline' href='/'>
-          Alejo Araya
-        </a>
-      </p>
-    </footer>
+    <>
+      <footer className=' footer flex [&>*]:w-full [&>p]:justify-center '>
+        <p className='flex gap-1 py-10'>
+          © Copyright {new Date().getFullYear()}. Made by
+          <a className='hover:underline' href='/'>
+            Alejo Araya
+          </a>
+        </p>
+      </footer>
+      <a
+        href={"/#"}
+        className='absolute w-12 h-12 -translate-y-16 rounded-full shadow-xl right-3 bg-primary'
+      >
+        <GrFormNextLink className='w-full h-full duration-150 ease-in transform -rotate-130 hover:-rotate-90 stroke-white' />
+      </a>
+    </>
   );
 };

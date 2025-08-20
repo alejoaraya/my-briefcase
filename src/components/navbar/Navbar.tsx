@@ -9,10 +9,10 @@ export const Navbar = () => {
     >
       {/* <div className='shadow-sm navbar bg-base-100'> */}
       <div className='flex-none'>
-        <ul className='px-1 menu menu-horizontal '>
-          <li>
+        <ul className='menu menu-horizontal'>
+          {/*  <li>
             <LinkItem text='INICIO' url='' />
-          </li>
+          </li> */}
           <li>
             <LinkItem text='EXPERIENCIA' url='workspace' />
           </li>

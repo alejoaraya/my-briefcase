@@ -4,7 +4,7 @@ import { ContentSection } from "../ui";
 export const StackSection = () => {
   return (
     <ContentSection id='stack' text='' title='STACK'>
-      <div className='flex flex-row flex-wrap justify-between gap-3'>
+      <div className='flex flex-row flex-wrap gap-3 lg:gap-x-4 '>
         <h1 className='border badge-lg badge badge-primary badge-soft border-primary'>
           <GrReactjs />
           JavaScript
