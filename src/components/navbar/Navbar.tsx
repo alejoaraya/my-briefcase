@@ -11,7 +11,7 @@ export const Navbar = () => {
       <div className='flex-none'>
         <ul className='px-1 menu menu-horizontal '>
           <li>
-            <LinkItem text='INICIO' url='home' />
+            <LinkItem text='INICIO' url='' />
           </li>
           <li>
             <LinkItem text='EXPERIENCIA' url='workspace' />
@@ -27,7 +27,7 @@ export const Navbar = () => {
               <input
                 type='checkbox'
                 className='theme-controller'
-                value='dark'
+                value='forest'
               />
 
               <svg

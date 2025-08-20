@@ -22,7 +22,7 @@ export const WorkspaceSection = () => {
             <div className='flex flex-col w-full col-span-1 gap-1'>
               <h1 className='card-title'>Help Desk Analyst</h1>
               <h3 className='stat-title'>KONECTA</h3>
-              <h5 className='font-bold text-blue-500'>Jun 2025 - Actualidad</h5>
+              <h5 className='font-bold text-primary'>Jun 2025 - Actualidad</h5>
             </div>
 
             <div className='flex flex-col items-start justify-start col-span-2 gap-2 text-justify'>
@@ -41,7 +41,7 @@ export const WorkspaceSection = () => {
             <div className='flex flex-col w-full col-span-1 gap-1'>
               <h1 className='card-title'>Team Leader</h1>
               <h3 className='stat-title'>RED DE SALUD TECNOLÓGICA (RST)</h3>
-              <h5 className='text-blue-500'>Mar 2024 - Jul 2024</h5>
+              <h5 className='text-primary'>Mar 2024 - Jul 2024</h5>
             </div>
             <div className='flex flex-col items-start justify-start col-span-2 gap-2 text-justify'>
               <p>
@@ -79,7 +79,7 @@ export const WorkspaceSection = () => {
             <div className='flex flex-col w-full col-span-1 gap-1'>
               <h1 className='card-title'>Desarrollador Web</h1>
               <h3 className='stat-title'>RED DE SALUD TECNOLÓGICA (RST)</h3>
-              <h5 className='text-blue-500'>May 2023 - Jul 2024</h5>
+              <h5 className='text-primary'>May 2023 - Jul 2024</h5>
             </div>
             <div className='flex flex-col items-start justify-start col-span-2 gap-2 text-justify'>
               <p>
@@ -115,7 +115,7 @@ export const WorkspaceSection = () => {
                 Mantenimiento y Reparación de Computadoras
               </h1>
               <h3 className='stat-title'>Emprendimiento</h3>
-              <h5 className='text-blue-500'>Mar 2018 - Actualidad</h5>
+              <h5 className='text-primary'>Mar 2018 - Actualidad</h5>
             </div>
             <div className='flex flex-col items-start justify-start col-span-2 gap-2 text-justify'>
               <p>
@@ -139,7 +139,7 @@ export const WorkspaceSection = () => {
               <h3 className='uppercase stat-title'>
                 Universidad Tecnológica Nacional
               </h3>
-              <h5 className='text-blue-500'>Ago 2021 - Nov 2023</h5>
+              <h5 className='text-primary'>Ago 2021 - Nov 2023</h5>
               <div className='flex flex-wrap gap-2'>
                 <div className='border badge badge-primary badge-soft border-primary'>
                   <GrReactjs />
@@ -166,7 +166,7 @@ export const WorkspaceSection = () => {
               <h3 className='uppercase stat-title'>
                 Newton - Escuela de capacitación
               </h3>
-              <h5 className='text-blue-500'>Mar 2018 - Mar 2019</h5>
+              <h5 className='text-primary'>Mar 2018 - Mar 2019</h5>
             </div>
             <div></div>
           </div>

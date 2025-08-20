@@ -11,14 +11,17 @@ export const AboutSection = () => {
     >
       <div className='grid grid-cols-1 grid-rows-2 gap-20 md:grid-rows-1 md:grid-cols-2'>
         <PersonalInformation />
-
-        {/* <div className='grid grid-cols-1 grid-rows-2'>
-          <TechnologyList />
-          <SoftSkillsList />
-        </div> */}
-        <div>
-          <div className='rounded-full'>
-            <img className='rounded-full' src='/assets/jpeg/avatar.jpeg' />
+        <div className='flex flex-col gap-4 shadow bg-primary place-items-center place-content-center rounded-4xl '>
+          <div className='border-4 border-white rounded-full'>
+            <img className='rounded-full w-80' src='/assets/jpeg/avatar.jpeg' />
+          </div>
+          <div className='flex flex-col'>
+            <a href='#' className='text-white'>
+              +54 9 2612589882
+            </a>
+            <a href='#' className='text-white'>
+              alejoaraya2000@gmail.com
+            </a>
           </div>
         </div>
       </div>
