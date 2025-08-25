@@ -1,5 +1,7 @@
 import { GrReactjs, GrValidate } from "react-icons/gr";
 import { ContentSection } from "../ui";
+import { WorkItem } from "./components/WorkItem";
+import { Timeline } from "./components/Timeline";
 
 export const WorkspaceSection = () => {
   return (
@@ -10,166 +12,115 @@ export const WorkspaceSection = () => {
       title='EXPERIENCIA PROFESIONAL'
     >
       <div className='flex flex-row h-full gap-5'>
-        <div className='w-0.5 h-full bg-primary opacity-25'></div>
-        <div className='flex flex-col gap-24'>
-          {/* Help Desk Analyst - KONECTA */}
-          <div className='flex flex-col gap-5 lg:grid lg:grid-cols-3 lg:gap-10'>
-            <div className='inline-grid absolute w-3 h-3 translate-y-2 rounded-full -translate-x-[1.70rem] bg-primary *:[grid-area:1/1]'>
-              <div className='w-3 h-3 status status-primary animate-ping'></div>
-              <div className='w-3 h-3 status status-primary'></div>
-            </div>
-
-            <div className='flex flex-col w-full col-span-1 gap-1'>
-              <h1 className='card-title'>Help Desk Analyst</h1>
-              <h3 className='stat-title'>KONECTA</h3>
-              <h5 className='font-bold text-primary'>Jun 2025 - Actualidad</h5>
-            </div>
-
-            <div className='flex flex-col items-start justify-start col-span-2 gap-2 text-justify'>
-              <p>
-                Atención y registro de incidencias técnicas, soporte remoto en
+        <Timeline />
+        <div className='flex flex-col gap-18 lg:gap-24'>
+          <WorkItem
+            company='KONECTA'
+            date='Jun 2025 - Actualidad'
+            description='Atención y registro de incidencias técnicas, soporte remoto en
                 software y hardware, escalamiento de problemas a nivel superior,
                 seguimiento y cierre de tickets, y documentación de soluciones
-                en la base de conocimientos.
-              </p>
-            </div>
-          </div>
+                en la base de conocimientos.'
+            isCurrent
+            title='Help Desk Analyst'
+            key={1}
+          />
 
-          {/* Team Leader - RST */}
-          <div className='flex flex-col gap-5 lg:grid lg:grid-cols-3 lg:gap-10'>
-            <div className='absolute w-3 h-3 translate-y-2 rounded-full -translate-x-[1.70rem] bg-primary'></div>
-            <div className='flex flex-col w-full col-span-1 gap-1'>
-              <h1 className='card-title'>Team Leader</h1>
-              <h3 className='stat-title'>RED DE SALUD TECNOLÓGICA (RST)</h3>
-              <h5 className='text-primary'>Mar 2024 - Jul 2024</h5>
-            </div>
-            <div className='flex flex-col items-start justify-start col-span-2 gap-2 text-justify'>
-              <p>
-                Gestión de proyectos, revisión de código y garantía de calidad,
+          <WorkItem
+            title='Team Leader'
+            company='RED DE SALUD TECNOLÓGICA (RST)'
+            date='Mar 2024 - Jul 2024'
+            description='Gestión de proyectos, revisión de código y garantía de calidad,
                 tutoría y formación de equipo, comunicación y coordinación,
-                resolución de problemas y soporte técnico.
-              </p>
-              <div className='flex gap-2'>
-                <div className='border badge badge-primary badge-soft border-primary'>
-                  <GrReactjs />
-                  React
-                </div>
-                <div className='border badge badge-primary badge-soft border-primary'>
-                  <GrReactjs />
-                  Tailwind.css
-                </div>
-                <div className='border badge badge-primary badge-soft border-primary'>
-                  <GrReactjs />
-                  TS/JS
-                </div>
-                <div className='border badge badge-primary badge-soft border-primary'>
-                  <GrReactjs />
-                  Figma
-                </div>
-              </div>
-              {/* <button className='border btn btn-soft'>
-                Saber más <HiChevronRight />
-              </button> */}
-            </div>
-          </div>
+                resolución de problemas y soporte técnico.'
+            stack={[
+              { element: <GrReactjs />, name: "React " },
+              { element: <GrReactjs />, name: "Tailwind.css " },
+              { element: <GrReactjs />, name: "TS / JS " },
+              { element: <GrReactjs />, name: "Figma " },
+            ]}
+            key={2}
+          />
 
-          {/* Desarrollador Web - RST */}
-          <div className='flex flex-col gap-5 lg:grid lg:grid-cols-3 lg:gap-10'>
-            <div className='absolute w-3 h-3 translate-y-2 rounded-full -translate-x-[1.70rem] bg-primary'></div>
-            <div className='flex flex-col w-full col-span-1 gap-1'>
-              <h1 className='card-title'>Desarrollador Web</h1>
-              <h3 className='stat-title'>RED DE SALUD TECNOLÓGICA (RST)</h3>
-              <h5 className='text-primary'>May 2023 - Jul 2024</h5>
-            </div>
-            <div className='flex flex-col items-start justify-start col-span-2 gap-2 text-justify'>
-              <p>
-                Colaboración en el desarrollo de la interfaz de usuario,
+          <WorkItem
+            title='Desarrollador Web'
+            company='RED DE SALUD TECNOLÓGICA (RST)'
+            date='May 2023 - Jul 2024'
+            description='Colaboración en el desarrollo de la interfaz de usuario,
                 desarrollo de componentes de React, integración de APIs,
-                optimización del rendimiento y mantenimiento del código.
-              </p>
-              <div className='flex gap-2'>
-                <div className='border badge badge-primary badge-soft border-primary'>
-                  <GrReactjs />
-                  React
-                </div>
-                <div className='border badge badge-primary badge-soft border-primary'>
-                  <GrReactjs />
-                  Tailwind.css
-                </div>
-                <div className='border badge badge-primary badge-soft border-primary'>
-                  <GrReactjs />
-                  TS/JS
-                </div>
+                optimización del rendimiento y mantenimiento del código.'
+            stack={[
+              { element: <GrReactjs />, name: "React " },
+              { element: <GrReactjs />, name: "Tailwind.css " },
+              { element: <GrReactjs />, name: "TS / JS " },
+            ]}
+            key={3}
+          />
+
+          <WorkItem
+            title='Mantenimiento y Reparación de Computadoras'
+            company='Emprendimiento'
+            date='Mar 2018 - Actualidad'
+            description=' Resolución de problemas de software, armado de PC, recuperación
+                de datos y mantenimiento de servidores.'
+            key={4}
+          />
+        </div>
+      </div>
+
+      {/* <div className='w-full h-0.5 bg-primary opacity-50'></div> */}
+
+      <div>
+        {/* title */}
+        <div className='flex gap-3 mb-7 place-items-center'>
+          <div className='h-4 bg-base-100'>
+            <GrValidate className='w-5 h-5 stroke-primary ' />
+          </div>
+          <div className='place-self-start'>
+            <h1 className='text-3xl tracking-wider poppins-bold '>Estudios</h1>
+            <div className='w-full h-1 rounded bg-primary'></div>
+          </div>
+        </div>
+
+        {/* experience */}
+        <div className='flex flex-col gap-14 lg:grid lg:grid-cols-2 lg:gap-12'>
+          <div className='flex flex-col col-span-1 gap-2'>
+            <h1 className='uppercase card-title'>
+              Tecnicatura Superior en Programación
+            </h1>
+            <h3 className='uppercase stat-title'>
+              Universidad Tecnológica Nacional
+            </h3>
+            <h5 className='text-primary'>Ago 2021 - Nov 2023</h5>
+            <div className='flex flex-wrap gap-2'>
+              <div className='border badge badge-primary badge-lg badge-soft border-primary'>
+                <GrReactjs />
+                Java
               </div>
-              {/* <button className='border btn btn-soft'>
-                Saber más <HiChevronRight />
-              </button> */}
-            </div>
-          </div>
-
-          {/* Mantenimiento y Reparación de Computadoras - Newton */}
-          <div className='flex flex-col gap-5 lg:grid lg:grid-cols-3 lg:gap-10'>
-            <div className='absolute w-3 h-3 translate-y-2 rounded-full -translate-x-[1.70rem] bg-primary'></div>
-            <div className='flex flex-col w-full col-span-1 gap-1'>
-              <h1 className='card-title'>
-                Mantenimiento y Reparación de Computadoras
-              </h1>
-              <h3 className='stat-title'>Emprendimiento</h3>
-              <h5 className='text-primary'>Mar 2018 - Actualidad</h5>
-            </div>
-            <div className='flex flex-col items-start justify-start col-span-2 gap-2 text-justify'>
-              <p>
-                Resolución de problemas de software, armado de PC, recuperación
-                de datos y mantenimiento de servidores.
-              </p>
-              {/* <button className='border btn btn-soft'>
-                Saber más <HiChevronRight />
-              </button> */}
-            </div>
-          </div>
-
-          <div className='flex flex-col gap-5 lg:grid lg:grid-cols-2 lg:gap-12'>
-            <div className=' absolute translate-y-2 rounded-full -translate-x-[1.85rem] h-4 bg-base-100'>
-              <GrValidate className='w-5 h-5 stroke-primary ' />
-            </div>
-            <div className='flex flex-col col-span-1 gap-2'>
-              <h1 className='uppercase card-title'>
-                Tecnicatura Superior en Programación
-              </h1>
-              <h3 className='uppercase stat-title'>
-                Universidad Tecnológica Nacional
-              </h3>
-              <h5 className='text-primary'>Ago 2021 - Nov 2023</h5>
-              <div className='flex flex-wrap gap-2'>
-                <div className='border badge badge-primary badge-soft border-primary'>
-                  <GrReactjs />
-                  Java
-                </div>
-                <div className='border badge badge-primary badge-soft border-primary'>
-                  <GrReactjs />
-                  TypeScript
-                </div>
-                <div className='border badge badge-primary badge-soft border-primary'>
-                  <GrReactjs />
-                  MySQL
-                </div>
-                <div className='border badge badge-primary badge-soft border-primary'>
-                  <GrReactjs />
-                  MariaDB
-                </div>
+              <div className='border badge badge-primary badge-lg badge-soft border-primary'>
+                <GrReactjs />
+                React.ts
+              </div>
+              <div className='border badge badge-primary badge-lg badge-soft border-primary'>
+                <GrReactjs />
+                MySQL
+              </div>
+              <div className='border badge badge-primary badge-lg badge-soft border-primary'>
+                <GrReactjs />
+                MariaDB
               </div>
             </div>
-            <div className='flex flex-col col-span-1 gap-2 '>
-              <h1 className='card-title'>
-                Manteniemiento y Reparacion de Computadoras
-              </h1>
-              <h3 className='uppercase stat-title'>
-                Newton - Escuela de capacitación
-              </h3>
-              <h5 className='text-primary'>Mar 2018 - Mar 2019</h5>
-            </div>
-            <div></div>
           </div>
+          <div className='flex flex-col col-span-1 gap-2 '>
+            <h1 className='card-title'>
+              Manteniemiento y Reparacion de Computadoras
+            </h1>
+            <h3 className='uppercase stat-title'>
+              Newton - Escuela de capacitación
+            </h3>
+            <h5 className='text-primary'>Mar 2018 - Mar 2019</h5>
+          </div>
+          <div></div>
         </div>
       </div>
     </ContentSection>

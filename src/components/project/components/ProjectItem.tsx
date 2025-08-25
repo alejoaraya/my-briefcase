@@ -29,20 +29,20 @@ Props) => {
       </div>
       <div className='flex flex-col gap-5'>
         <h1 className='text-xl poppins-bold'>{title}</h1>
-        <div className='flex flex-wrap gap-2 flex-'>
-          <div className='border badge badge-primary badge-soft border-primary'>
+        <div className='flex flex-wrap gap-2 '>
+          <div className='border badge badge-primary badge-lg badge-soft border-primary'>
             <GrReactjs />
             React.ts
           </div>
-          <div className='border badge badge-primary badge-soft border-primary'>
+          <div className='border badge badge-primary badge-lg badge-soft border-primary'>
             <GrReactjs />
             Figma
           </div>
-          <div className='border badge badge-primary badge-soft border-primary'>
+          <div className='border badge badge-primary badge-lg badge-soft border-primary'>
             <GrReactjs />
             TypeScript
           </div>
-          <div className='border badge badge-primary badge-soft border-primary'>
+          <div className='border badge badge-primary badge-lg badge-soft border-primary'>
             <RiTailwindCssFill />
             Tailwind CSS
           </div>
