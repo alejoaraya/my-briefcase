@@ -1,7 +1,7 @@
 import { FaGithub, FaInstagram, FaLinkedin, FaPhoneAlt, FaRegFileAlt } from "react-icons/fa";
 import { HiEnvelope } from "react-icons/hi2";
 import { Avatar } from "./navbar/components/Avatar";
-import { Link } from "react-router-dom";
+
 
 
 
