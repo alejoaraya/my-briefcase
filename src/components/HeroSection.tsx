@@ -1,10 +1,19 @@
-import { FaLinkedin, FaRegFileAlt } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin, FaPhoneAlt, FaRegFileAlt } from "react-icons/fa";
 import { HiEnvelope } from "react-icons/hi2";
 import { Avatar } from "./navbar/components/Avatar";
 import { Link } from "react-router-dom";
 
 
 
+const socialMediaItems = [
+  { id: 1, icon: <HiEnvelope className=' stroke-primary fill-primary w-6 h-6' />, link: "", dataTip: "Enviame un mail" },
+  { id: 2, icon: <FaPhoneAlt className=' stroke-primary fill-primary w-6 h-6' />, link: "https://wa.me/+5492612589882", dataTip: "Contactame por whatsapp" },
+  { id: 4, icon: <FaRegFileAlt className=' stroke-primary fill-primary w-6 h-6' />, link: "https://drive.google.com/file/d/1QnVRiGQYgbK_xzaljWfeNeJs6IWbZsyK/view?usp=sharing", dataTip: "Descargar CV" },
+  { id: 3, icon: <FaLinkedin className=' stroke-primary fill-primary w-6 h-6' />, link: "https://www.linkedin.com/in/alejoaraya/", dataTip: "LinkedIn" },
+  { id: 5, icon: <FaGithub className=' stroke-primary fill-primary w-6 h-6' />, link: "https://github.com/alejoaraya", dataTip: "GitHub" },
+  { id: 6, icon: <FaInstagram className=' stroke-primary fill-primary w-6 h-6' />, link: "https://www.instagram.com/alejoaraya.dev/", dataTip: "Instagram" },
+
+]
 
 export const HeroSection = () => {
   return (
@@ -25,7 +34,7 @@ export const HeroSection = () => {
             </p>
           </div>
         </div>
-        <div className='flex flex-col gap-5'>
+        <div className='flex flex-col gap-8'>
           <div className='flex flex-col lg:gap-5'>
             <p className='text-2xl font-bold lg:text-3xl'>
               Hola, me llamo Alejo Araya
@@ -38,31 +47,25 @@ export const HeroSection = () => {
               cada proyecto.
             </p>
           </div>
-          <div className='flex gap-3'>
-            <a
-              href='mailto:alejoaraya2000@gmail.com'
-              target='_blank'
-              className=' btn btn-primary'
-            >
-              <HiEnvelope />
-              Contactame
-            </a>
-            <Link
-              to={"https://www.linkedin.com/in/alejoaraya/"}
-              target='_blank'
-              className='border btn btn-primary border-primary'
-            >
-              <FaLinkedin />
-              LinkedIn
-            </Link>
-            <a
-              href="https://drive.google.com/file/d/1QnVRiGQYgbK_xzaljWfeNeJs6IWbZsyK/view?usp=sharing"
-              target="_blank"
-              className='border btn btn-primary border-primary'
-            >
-              <FaRegFileAlt />
-              Descargar CV
-            </a>
+
+
+          <div className='flex gap-5 lg:gap-8'>
+            {
+              socialMediaItems.map(socialMedia => (
+
+                <div key={socialMedia.id} className="tooltip" data-tip={socialMedia.dataTip}>
+                  <a
+                    href={socialMedia.link}
+                    target='_blank'
+                  >
+                    {socialMedia.icon}
+                  </a>
+                </div>
+              ))
+            }
+
+
+
           </div>
         </div>
       </main>

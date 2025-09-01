@@ -1,67 +1,90 @@
-import { HiLink } from "react-icons/hi2";
-import { GrGithub, GrReactjs } from "react-icons/gr";
-import { RiTailwindCssFill } from "react-icons/ri";
+import { FaGithub, FaGlobe } from "react-icons/fa";
+import { IconType } from "react-icons";
 
 interface Props {
-  url: string;
-  image: string;
+  url: {
+    github: string,
+    demo?: string
+  },
+  stack: {
+    icon: IconType,
+    name: string
+  }[],
   title: string;
-  // buttonText: "CASE STUDY" | "CASE WORK";
-  buttonText: string;
   description: string;
 }
 
 export const ProjectItem = ({
   url,
-  image,
+  stack,
   title,
   description,
-}: // buttonText,
-Props) => {
+}:
+  Props) => {
   return (
-    <div className='grid grid-cols-1 gap-5 lg:gap-16 md:grid-cols-2 place-items-center'>
-      <div className='w-full transition duration-500 border border-gray-300 rounded-3xl bg-base-200 hover:scale-105 hover:border-primary '>
-        <img
-          className='object-cover object-top w-full sm:h-full rounded-3xl'
-          src={image}
-          alt={url}
-        />
+    <div className="card card-body h-full justify-between gap-12 shadow-sm bg-base-100 border border-primary rouded-3xl hover:scale-105 transition duration-500">
+      <div className="flex flex-col gap-3">
+        <div className="flex gap-3 items-center">
+          <h1 className="card-title">{title}</h1>
+          <div className="tooltip" data-tip={"GitHub"}>
+            <a
+              href={url.github}
+              target='_blank'
+            >
+              <FaGithub className=' stroke-primary fill-primary w-6 h-6 hover:scale-105 transition duration-100 ease-out' />
+            </a>
+          </div>
+          {url.demo && <div className="tooltip" data-tip={"Demo"}>
+            <a
+              href={url.demo}
+              target='_blank'
+            >
+              <FaGlobe className=' stroke-primary fill-primary w-6 h-6 hover:scale-105 transition duration-100 ease-out' />
+            </a>
+          </div>}
+        </div>
+        <p >{description}</p>
       </div>
-      <div className='flex flex-col gap-5'>
-        <h1 className='text-xl poppins-bold'>{title}</h1>
-        <div className='flex flex-wrap gap-2 '>
-          <div className='border badge badge-primary badge-lg badge-soft border-primary'>
-            <GrReactjs />
-            React.ts
-          </div>
-          <div className='border badge badge-primary badge-lg badge-soft border-primary'>
-            <GrReactjs />
-            Figma
-          </div>
-          <div className='border badge badge-primary badge-lg badge-soft border-primary'>
-            <GrReactjs />
-            TypeScript
-          </div>
-          <div className='border badge badge-primary badge-lg badge-soft border-primary'>
-            <RiTailwindCssFill />
-            Tailwind CSS
-          </div>
-        </div>
-        <div className='flex flex-col gap-8'>
-          <p className='text-lg opacity-70'>{description}</p>
-          <div className='flex flex-row gap-3'>
-            <button className='border border-primary btn btn-primary '>
-              <GrGithub />
-              Code
-            </button>
-            <button className='border border-primary btn btn-primary '>
-              <HiLink /> Preview
-            </button>
-            {/* <Button text={"Code"} url={url} />
-            <Button text={"Preview"} url={url} /> */}
-          </div>
-        </div>
+      <div className="flex flex-wrap gap-2 ">
+        {
+          stack.map(tech => (
+            <h1 className='border badge-md badge badge-primary badge-soft border-primary'>
+              {<tech.icon />}
+              {tech.name}
+            </h1>
+          ))
+        }
       </div>
     </div>
   );
 };
+/* 
+
+<div className="card lg:card-side bg-base-100 shadow-sm">
+  <figure>
+    <img
+      src={image}
+      alt="Album" />
+  </figure>
+  <div className="card-body">
+    <h2 className="card-title">{title}</h2>
+    <div className="flex flex-wrap gap-2 ">
+      <p>{description}</p>
+      <h1 className='border badge-lg badge badge-primary badge-soft border-primary'>
+        {<GrReactjs />}
+        React
+      </h1>
+      <h1 className='border badge-lg badge badge-primary badge-soft border-primary'>
+        {<GrReactjs />}
+        TypeScript
+      </h1>
+      <h1 className='border badge-lg badge badge-primary badge-soft border-primary'>
+        {<GrReactjs />}
+        Tailwind.css
+      </h1>
+    </div>
+    <div className="card-actions justify-end">
+      <button className="btn btn-primary">Listen</button>
+    </div>
+  </div>
+</div> */
