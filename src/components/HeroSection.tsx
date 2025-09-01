@@ -1,7 +1,10 @@
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedin, FaRegFileAlt } from "react-icons/fa";
 import { HiEnvelope } from "react-icons/hi2";
 import { Avatar } from "./navbar/components/Avatar";
 import { Link } from "react-router-dom";
+
+
+
 
 export const HeroSection = () => {
   return (
@@ -52,6 +55,14 @@ export const HeroSection = () => {
               <FaLinkedin />
               LinkedIn
             </Link>
+            <a
+              href="https://drive.google.com/file/d/1QnVRiGQYgbK_xzaljWfeNeJs6IWbZsyK/view?usp=sharing"
+              target="_blank"
+              className='border btn btn-primary border-primary'
+            >
+              <FaRegFileAlt />
+              Descargar CV
+            </a>
           </div>
         </div>
       </main>
