@@ -77,7 +77,7 @@ export const WorkspaceSection = () => {
             <GrValidate className='w-5 h-5 stroke-primary ' />
           </div>
           <div className='place-self-start'>
-            <h1 className='text-3xl tracking-wider poppins-bold '>Estudios</h1>
+            <h1 className='text-xl lg:text-3xl tracking-wider poppins-bold '>Estudios</h1>
             <div className='w-full h-1 rounded bg-primary'></div>
           </div>
         </div>
@@ -85,27 +85,27 @@ export const WorkspaceSection = () => {
         {/* experience */}
         <div className='flex flex-col gap-14 lg:grid lg:grid-cols-2 lg:gap-12'>
           <div className='flex flex-col col-span-1 gap-2'>
-            <h1 className='uppercase card-title'>
+            <h1 className='uppercase card-title  '>
               Tecnicatura Superior en Programación
             </h1>
-            <h3 className='uppercase stat-title'>
+            <h3 className='uppercase stat-title text-sm lg:text-base'>
               Universidad Tecnológica Nacional
             </h3>
-            <h5 className='text-primary'>Ago 2021 - Nov 2023</h5>
+            <h5 className='text-primary text-sm lg:text-base'>Ago 2021 - Nov 2023</h5>
             <div className='flex flex-wrap gap-2'>
-              <div className='border badge badge-primary badge-lg badge-soft border-primary'>
+              <div className='border badge badge-primary  badge-sm sm:badge-md lg:badge-lg badge-soft border-primary'>
                 <GrReactjs />
                 Java
               </div>
-              <div className='border badge badge-primary badge-lg badge-soft border-primary'>
+              <div className='border badge badge-primary  badge-sm sm:badge-md lg:badge-lg badge-soft border-primary'>
                 <GrReactjs />
                 React.ts
               </div>
-              <div className='border badge badge-primary badge-lg badge-soft border-primary'>
+              <div className='border badge badge-primary  badge-sm sm:badge-md lg:badge-lg badge-soft border-primary'>
                 <GrReactjs />
                 MySQL
               </div>
-              <div className='border badge badge-primary badge-lg badge-soft border-primary'>
+              <div className='border badge badge-primary  badge-sm sm:badge-md lg:badge-lg badge-soft border-primary'>
                 <GrReactjs />
                 MariaDB
               </div>

@@ -35,17 +35,17 @@ export const WorkItem = ({
         )}
 
         <div className='flex flex-col w-full col-span-1 gap-1'>
-          <h1 className='card-title'>{title}</h1>
-          <h3 className='stat-title'>{company}</h3>
-          <h5 className={`${isCurrent && "font-bold"} text-primary`}>{date}</h5>
+          <h1 className='card-title text-base sm:text-lg '>{title}</h1>
+          <h3 className='stat-title '>{company}</h3>
+          <h5 className={`${isCurrent && "font-bold"} text-primary text-sm lg:text-base`}>{date}</h5>
         </div>
 
-        <div className='flex flex-col items-start justify-start col-span-2 gap-2 text-justify'>
+        <div className='flex text-sm lg:text-base flex-col items-start justify-start col-span-2 gap-2 text-justify'>
           <p>{description}</p>
           {stack && (
             <div className='flex flex-wrap gap-2'>
               {stack.map((tech: Stack) => (
-                <div className='border badge badge-primary badge-lg badge-soft border-primary'>
+                <div className='border badge badge-primary badge-sm sm:badge-md lg:badge-lg badge-soft border-primary'>
                   {tech.element} {tech.name}
                 </div>
               ))}

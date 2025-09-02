@@ -19,27 +19,30 @@ export const HeroSection = () => {
   return (
     <>
       <main
-        className='flex flex-col items-start justify-center gap-5 pt-10 md:pt-32'
+        className='flex flex-col items-start justify-center gap-5 pt-10 sm:pt-16 md:pt-32 px-4'
         id='home'
       >
-        <div className='flex flex-row gap-5 place-items-center'>
-          <Avatar size='w-20 md:w-32 lg:w-48 ' />
-          <div className='flex items-center gap-3'>
+        {/* Avatar + estado */}
+        <div className='flex flex-col sm:flex-row gap-4 sm:gap-5 items-center  justify-center md:justify-start  w-full'>
+          <Avatar size='w-32  lg:w-48 ' />
+          <div className='flex items-center gap-2 sm:gap-3 mt-3 sm:mt-0'>
             <div className='inline-grid *:[grid-area:1/1]'>
-              <div className='w-3 h-3 status status-primary animate-ping'></div>
-              <div className='w-3 h-3 status status-primary'></div>
+              <div className='w-2.5 h-2.5 sm:w-3 sm:h-3 status status-primary animate-ping'></div>
+              <div className='w-2.5 h-2.5 sm:w-3 sm:h-3 status status-primary'></div>
             </div>
-            <p className='px-10 py-4 font-bold badge badge-primary '>
+            <p className='px-4 py-2 text-xs sm:text-sm md:text-base font-bold badge badge-primary '>
               Disponible para trabajar
             </p>
           </div>
         </div>
-        <div className='flex flex-col gap-8'>
-          <div className='flex flex-col lg:gap-5'>
-            <p className='text-2xl font-bold lg:text-3xl'>
+
+        {/* Texto */}
+        <div className='flex flex-col gap-6 md:gap-8 '>
+          <div className='flex flex-col gap-3 lg:gap-5  sm:text-left'>
+            <p className='text-xl sm:text-2xl font-bold lg:text-3xl'>
               Hola, me llamo Alejo Araya
             </p>
-            <p className='w-full '>
+            <p className='text-sm sm:text-base leading-relaxed'>
               Soy desarrollador Front-End con experiencia en React, integración
               de APIs y optimización de interfaces web. Me enfoco en crear
               aplicaciones intuitivas y eficientes, con atención al detalle y
@@ -48,27 +51,24 @@ export const HeroSection = () => {
             </p>
           </div>
 
-
-          <div className='flex gap-5 lg:gap-8'>
-            {
-              socialMediaItems.map(socialMedia => (
-
-                <div key={socialMedia.id} className="tooltip" data-tip={socialMedia.dataTip}>
-                  <a
-                    href={socialMedia.link}
-                    target='_blank'
-                  >
-                    {socialMedia.icon}
-                  </a>
-                </div>
-              ))
-            }
-
-
-
+          {/* Socials */}
+          <div className='flex flex-wrap gap-4 sm:gap-5 lg:gap-8 justify-center sm:justify-start'>
+            {socialMediaItems.map(socialMedia => (
+              <div key={socialMedia.id} className="tooltip" data-tip={socialMedia.dataTip}>
+                <a
+                  href={socialMedia.link}
+                  target='_blank'
+                  rel="noreferrer"
+                  className=" hover:scale-110 transition-transform"
+                >
+                  {socialMedia.icon}
+                </a>
+              </div>
+            ))}
           </div>
         </div>
       </main>
+
     </>
   );
 };

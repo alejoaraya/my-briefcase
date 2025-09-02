@@ -4,5 +4,5 @@ interface Props {
   children: ReactNode;
 }
 export const ContentLayout = ({ children }: Props) => {
-  return <div className='px-5 md:px-[139px] lg:px-[300px] '>{children}</div>;
+  return <div className='px-5 md:px-[139px] xl:px-[300px] '>{children}</div>;
 };

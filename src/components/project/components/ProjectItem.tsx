@@ -48,7 +48,7 @@ export const ProjectItem = ({
       <div className="flex flex-wrap gap-2 ">
         {
           stack.map(tech => (
-            <h1 className='border badge-md badge badge-primary badge-soft border-primary'>
+            <h1 className='border  badge-sm sm:badge-md badge badge-primary badge-soft border-primary'>
               {<tech.icon />}
               {tech.name}
             </h1>
@@ -58,33 +58,3 @@ export const ProjectItem = ({
     </div>
   );
 };
-/* 
-
-<div className="card lg:card-side bg-base-100 shadow-sm">
-  <figure>
-    <img
-      src={image}
-      alt="Album" />
-  </figure>
-  <div className="card-body">
-    <h2 className="card-title">{title}</h2>
-    <div className="flex flex-wrap gap-2 ">
-      <p>{description}</p>
-      <h1 className='border badge-lg badge badge-primary badge-soft border-primary'>
-        {<GrReactjs />}
-        React
-      </h1>
-      <h1 className='border badge-lg badge badge-primary badge-soft border-primary'>
-        {<GrReactjs />}
-        TypeScript
-      </h1>
-      <h1 className='border badge-lg badge badge-primary badge-soft border-primary'>
-        {<GrReactjs />}
-        Tailwind.css
-      </h1>
-    </div>
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary">Listen</button>
-    </div>
-  </div>
-</div> */
