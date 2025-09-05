@@ -50,7 +50,7 @@ export const ProjectItem = ({
       <div className="flex flex-wrap gap-2 ">
         {
           stack.map(tech => (
-            <h1 className='border  badge-sm sm:badge-md badge badge-primary badge-soft border-primary'>
+            <h1 className='border  badge-sm xs:bagde-md sm:badge-md badge badge-primary badge-soft border-primary'>
               {<tech.icon />}
               {tech.name}
             </h1>

@@ -45,7 +45,7 @@ export const WorkItem = ({
           {stack && (
             <div className='flex flex-wrap gap-2'>
               {stack.map((tech: Stack) => (
-                <div className='border badge badge-primary badge-sm sm:badge-md lg:badge-lg badge-soft border-primary'>
+                <div className='border badge badge-primary badge-sm xs:bagde-md sm:badge-md lg:badge-lg badge-soft border-primary'>
                   {tech.element} {tech.name}
                 </div>
               ))}

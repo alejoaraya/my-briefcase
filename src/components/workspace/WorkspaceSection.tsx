@@ -96,19 +96,19 @@ export const WorkspaceSection = () => {
             <h6 className="text-gray-500">Argentina</h6>
             <h5 className='text-primary text-sm lg:text-base'>Ago 2021 - Nov 2023</h5>
             <div className='flex flex-wrap gap-2'>
-              <div className='border badge badge-primary  badge-sm sm:badge-md lg:badge-lg badge-soft border-primary'>
+              <div className='border badge badge-primary  badge-sm xs:bagde-md sm:badge-md lg:badge-lg badge-soft border-primary'>
                 <FaJava />
                 Java
               </div>
-              <div className='border badge badge-primary  badge-sm sm:badge-md lg:badge-lg badge-soft border-primary'>
+              <div className='border badge badge-primary  badge-sm xs:bagde-md sm:badge-md lg:badge-lg badge-soft border-primary'>
                 <GrReactjs />
                 React.ts
               </div>
-              <div className='border badge badge-primary  badge-sm sm:badge-md lg:badge-lg badge-soft border-primary'>
+              <div className='border badge badge-primary  badge-sm xs:bagde-md sm:badge-md lg:badge-lg badge-soft border-primary'>
                 <GrMysql />
                 MySQL
               </div>
-              <div className='border badge badge-primary  badge-sm sm:badge-md lg:badge-lg badge-soft border-primary'>
+              <div className='border badge badge-primary  badge-sm xs:bagde-md sm:badge-md lg:badge-lg badge-soft border-primary'>
                 <SiMongodb />
                 MongoDB
               </div>
