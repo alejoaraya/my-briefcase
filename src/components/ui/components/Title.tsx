@@ -12,6 +12,7 @@ interface Props {
   | "PROGRAMEMOS JUNTOS"
   | "LET'S WORK TOGETHER"
   | "STACK"
+  | "HABILIDADES"
   | "TRABAJEMOS JUNTOS";
   text: string;
 }

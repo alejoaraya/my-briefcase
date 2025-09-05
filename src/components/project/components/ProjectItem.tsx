@@ -24,24 +24,26 @@ export const ProjectItem = ({
   return (
     <div className="card card-body h-full justify-between gap-12 shadow-sm bg-base-100 border border-primary rouded-3xl hover:scale-105 transition duration-500">
       <div className="flex flex-col gap-3">
-        <div className="flex gap-3 items-center">
+        <div className="flex gap-3 items-start justify-between">
           <h1 className="card-title">{title}</h1>
-          <div className="tooltip" data-tip={"GitHub"}>
-            <a
-              href={url.github}
-              target='_blank'
-            >
-              <FaGithub className=' stroke-primary fill-primary w-6 h-6 hover:scale-105 transition duration-100 ease-out' />
-            </a>
+          <div className="flex gap-3">
+            <div className="tooltip" data-tip={"GitHub"}>
+              <a
+                href={url.github}
+                target='_blank'
+              >
+                <FaGithub className=' stroke-primary fill-primary w-6 h-6 hover:scale-105 transition duration-100 ease-out' />
+              </a>
+            </div>
+            {url.demo && <div className="tooltip" data-tip={"Demo"}>
+              <a
+                href={url.demo}
+                target='_blank'
+              >
+                <FaGlobe className=' stroke-primary fill-primary w-6 h-6 hover:scale-105 transition duration-100 ease-out' />
+              </a>
+            </div>}
           </div>
-          {url.demo && <div className="tooltip" data-tip={"Demo"}>
-            <a
-              href={url.demo}
-              target='_blank'
-            >
-              <FaGlobe className=' stroke-primary fill-primary w-6 h-6 hover:scale-105 transition duration-100 ease-out' />
-            </a>
-          </div>}
         </div>
         <p >{description}</p>
       </div>

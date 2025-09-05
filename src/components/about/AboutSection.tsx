@@ -11,14 +11,14 @@ export const AboutSection = () => {
     >
       <div className='grid grid-cols-1 gap-10 md:gap-20  lg:grid-cols-2'>
         <PersonalInformation />
-        <div className='flex lg:place-self-center flex-col gap-4 shadow bg-base-300 place-items-center place-content-center rounded-4xl lg:w-[26rem] lg:py-5 h-[500px]'>
-          <div className='border-4 border-white rounded-full'>
+        <div className='flex  lg:place-self-center flex-col gap-4 shadow bg-[url("/assets/jpeg/avatar.jpeg")] bg-center bg-cover place-items-center place-content-center rounded-4xl lg:w-[26rem] lg:py-5 h-96 lg:h-full'>
+          {/* <div className='border-4 border-white rounded-full'>
             <img
               className='rounded-full w-80 lg:w-60'
               src='/assets/jpeg/avatar.jpeg'
             />
-          </div>
-          <div className='flex flex-col gap-3 lg:gap-2'>
+          </div> */}
+          {/* <div className='flex flex-col gap-3 lg:gap-2'>
             <a
               href='https://wa.me/+5492612589882'
               target='_blank'
@@ -33,9 +33,9 @@ export const AboutSection = () => {
             >
               Envieme un mail
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
-    </ContentSection>
+    </ContentSection >
   );
 };

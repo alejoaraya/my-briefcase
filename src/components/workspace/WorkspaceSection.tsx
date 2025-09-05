@@ -1,7 +1,9 @@
-import { GrReactjs, GrValidate } from "react-icons/gr";
 import { ContentSection } from "../ui";
 import { WorkItem } from "./components/WorkItem";
 import { Timeline } from "./components/Timeline";
+import { GrMysql, GrReactjs, GrValidate } from "react-icons/gr";
+import { SiFigma, SiMongodb, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { FaJava } from "react-icons/fa";
 
 export const WorkspaceSection = () => {
   return (
@@ -35,9 +37,9 @@ export const WorkspaceSection = () => {
                 resolución de problemas y soporte técnico.'
             stack={[
               { element: <GrReactjs />, name: "React " },
-              { element: <GrReactjs />, name: "Tailwind.css " },
-              { element: <GrReactjs />, name: "TS / JS " },
-              { element: <GrReactjs />, name: "Figma " },
+              { element: <SiTailwindcss />, name: "Tailwind.css " },
+              { element: <SiTypescript />, name: "TS / JS " },
+              { element: <SiFigma />, name: "Figma " },
             ]}
             key={2}
           />
@@ -51,8 +53,8 @@ export const WorkspaceSection = () => {
                 optimización del rendimiento y mantenimiento del código.'
             stack={[
               { element: <GrReactjs />, name: "React " },
-              { element: <GrReactjs />, name: "Tailwind.css " },
-              { element: <GrReactjs />, name: "TS / JS " },
+              { element: <SiTailwindcss />, name: "Tailwind.css " },
+              { element: <SiTypescript />, name: "TS / JS " },
             ]}
             key={3}
           />
@@ -77,7 +79,7 @@ export const WorkspaceSection = () => {
             <GrValidate className='w-5 h-5 stroke-primary ' />
           </div>
           <div className='place-self-start'>
-            <h1 className='text-xl lg:text-3xl tracking-wider poppins-bold '>Estudios</h1>
+            <h1 className='text-xl tracking-wider poppins-bold '>Estudios</h1>
             <div className='w-full h-1 rounded bg-primary'></div>
           </div>
         </div>
@@ -91,10 +93,11 @@ export const WorkspaceSection = () => {
             <h3 className='uppercase stat-title text-sm lg:text-base'>
               Universidad Tecnológica Nacional
             </h3>
+            <h6 className="text-gray-500">Argentina</h6>
             <h5 className='text-primary text-sm lg:text-base'>Ago 2021 - Nov 2023</h5>
             <div className='flex flex-wrap gap-2'>
               <div className='border badge badge-primary  badge-sm sm:badge-md lg:badge-lg badge-soft border-primary'>
-                <GrReactjs />
+                <FaJava />
                 Java
               </div>
               <div className='border badge badge-primary  badge-sm sm:badge-md lg:badge-lg badge-soft border-primary'>
@@ -102,22 +105,23 @@ export const WorkspaceSection = () => {
                 React.ts
               </div>
               <div className='border badge badge-primary  badge-sm sm:badge-md lg:badge-lg badge-soft border-primary'>
-                <GrReactjs />
+                <GrMysql />
                 MySQL
               </div>
               <div className='border badge badge-primary  badge-sm sm:badge-md lg:badge-lg badge-soft border-primary'>
-                <GrReactjs />
-                MariaDB
+                <SiMongodb />
+                MongoDB
               </div>
             </div>
           </div>
           <div className='flex flex-col col-span-1 gap-2 '>
-            <h1 className='card-title'>
+            <h1 className='card-title '>
               Manteniemiento y Reparacion de Computadoras
             </h1>
-            <h3 className='uppercase stat-title'>
+            <h3 className='uppercase stat-title '>
               Newton - Escuela de capacitación
             </h3>
+            <h6 className="text-gray-500">Argentina</h6>
             <h5 className='text-primary'>Mar 2018 - Mar 2019</h5>
           </div>
           <div></div>

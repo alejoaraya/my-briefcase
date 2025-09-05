@@ -11,7 +11,6 @@ export const BriefcasePage = () => {
       <ProjectsSection />
       <StackSection />
       <AboutSection />
-      {/* <ContactSection /> */}
     </ContentLayout>
   );
 };
