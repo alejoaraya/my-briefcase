@@ -7,7 +7,7 @@ export const Footer = () => {
         <p className='flex gap-1 py-10'>
           © Copyright {new Date().getFullYear()}. Made by
           <a className='hover:underline' href='/'>
-            Alejo Araya
+            me
           </a>
         </p>
       </footer>

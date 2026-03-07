@@ -24,8 +24,8 @@ export const Navbar = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
           >
-            <li><LinkItem text="EXPERIENCIA" url="workspace" /></li>
             <li><LinkItem text="PROYECTOS" url="projects" /></li>
+            <li><LinkItem text="EXPERIENCIA" url="workspace" /></li>
             <li><LinkItem text="SOBRE MÍ" url="about" /></li>
             <li >
               <label className='justify-end swap swap-rotate'>

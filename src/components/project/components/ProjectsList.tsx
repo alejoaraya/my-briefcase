@@ -1,7 +1,7 @@
 import { ProjectItem } from "./ProjectItem";
 
 import { GrReactjs } from "react-icons/gr";
-import { SiAxios, SiJavascript, SiReactrouter, SiRedux, SiShadcnui, SiTailwindcss, SiThymeleaf, SiTypescript, SiVite, SiVitest, SiZod } from "react-icons/si";
+import { SiAxios, SiCloudinary, SiJavascript, SiMercadopago, SiReactrouter, SiRedux, SiShadcnui, SiTailwindcss, SiThymeleaf, SiTypescript, SiVitest, SiZod } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 
 export const ProjectsList = () => {
@@ -16,7 +16,7 @@ export const ProjectsList = () => {
 '
         title='Cachavacha'
         stack={[
-          { icon: GrReactjs, name: "React" },
+          { icon: GrReactjs, name: "React 19 + Vite" },
           { icon: SiTypescript, name: "TypeScript" },
           { icon: SiTailwindcss, name: "Tailwind CSS 4" },
           { icon: SiShadcnui, name: "Shadcnui" },
@@ -36,9 +36,17 @@ export const ProjectsList = () => {
 '
         title='StockWise'
         stack={[
-          { icon: GrReactjs, name: "React" },
+          { icon: GrReactjs, name: "React 18 + Vite" },
           { icon: SiJavascript, name: "JavaScript" },
-          { icon: SiTailwindcss, name: "Tailwind.css " }]}
+          { icon: SiTailwindcss, name: "Tailwind CSS" },
+          { icon: SiRedux, name: "Redux Toolkit" },
+          { icon: SiZod, name: "Zod" },
+          { icon: SiAxios, name: "Axios" },
+          { icon: SiReactrouter, name: "React Router" },
+          { icon: SiCloudinary, name: "Cloudinary" },
+
+          { icon: SiMercadopago, name: "Mercado Pago SDK" },
+        ]}
       />
 
       <ProjectItem

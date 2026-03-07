@@ -68,15 +68,15 @@ export const StackSection = () => {
     <ContentSection id='stack' text='' title='HABILIDADES'>
       <div className='flex flex-row flex-wrap gap-3 lg:gap-x-4 '>
         {
-          stacksTech.map(stack => (
-            <StackItem key={stack.title} stack={stack} />
+          stacksTech.map((stack, index) => (
+            <StackItem key={`${stack.title}-${index}`} stack={stack} />
           ))
         }
       </div>
       <div className='flex flex-row flex-wrap gap-3 lg:gap-x-4 '>
         {
-          softskills.map(stack => (
-            <StackItem key={stack.title} stack={stack} />
+          softskills.map((stack, index) => (
+            <StackItem key={`${stack.title}-${index}`} stack={stack} />
           ))
         }
       </div>
