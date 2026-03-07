@@ -84,9 +84,9 @@ export const ProjectItem = ({
       <div
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
-        onClick={() => redirect(redirect_url)}
+
         className={cn(
-          "cursor-pointer card card-body h-full justify-between shadow-sm bg-base-100 border border-primary rounded-3xl ease-in transition-all duration-200",
+          "card card-body h-full justify-between shadow-sm bg-base-100 border border-primary rounded-3xl ease-in transition-all duration-200",
           "flex flex-col items-center gap-5 p-0",
           "lg:flex-row lg:items-center lg:gap-12 lg:p-6 lg:hover:bg-primary/5 lg:hover:h-[600px]"
         )}
