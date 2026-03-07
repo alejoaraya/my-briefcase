@@ -6,7 +6,7 @@ import { FaJava } from "react-icons/fa";
 
 export const ProjectsList = () => {
   return (
-    <div className="grid grid-col-1 gap-5 lg:gap-16 md:grid-cols-2 place-items-center lg:place-items-stretch lg:grid-cols-1 ">
+    <div className="grid grid-col-1 gap-5 lg:gap-16 place-items-center lg:place-items-stretch ">
       <ProjectItem
         redirect_url='Cachavacha'
         image_url="https://cachavacha-frontend.vercel.app/logo.png"
