@@ -62,10 +62,10 @@ export const Navbar = () => {
       <div className='navbar-center hidden sm:flex'>
         <ul className='menu menu-horizontal'>
           <li>
-            <LinkItem text='EXPERIENCIA' url='workspace' />
+            <LinkItem text='PROYECTOS' url='projects' />
           </li>
           <li>
-            <LinkItem text='PROYECTOS' url='projects' />
+            <LinkItem text='EXPERIENCIA' url='workspace' />
           </li>
           <li>
             <LinkItem text='SOBRE MÍ' url='about' />

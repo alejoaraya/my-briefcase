@@ -28,7 +28,7 @@ export const WorkspaceSection = () => {
             key={1}
           />
 
-          <WorkItem
+          {/*  <WorkItem
             title='Team Leader'
             company='RED DE SALUD TECNOLÓGICA (RST)'
             date='Mar 2024 - Jul 2024'
@@ -42,7 +42,7 @@ export const WorkspaceSection = () => {
               { element: <SiFigma />, name: "Figma " },
             ]}
             key={2}
-          />
+          /> */}
 
           <WorkItem
             title='Desarrollador Web'
@@ -55,6 +55,7 @@ export const WorkspaceSection = () => {
               { element: <GrReactjs />, name: "React " },
               { element: <SiTailwindcss />, name: "Tailwind.css " },
               { element: <SiTypescript />, name: "TS / JS " },
+              { element: <SiFigma />, name: "Figma " }
             ]}
             key={3}
           />
