@@ -1,6 +1,9 @@
 import { LinkItem } from "./components/LinkItem";
 
 export const Navbar = () => {
+
+  const toggleTheme = "dim"
+
   return (
     <header
       className='navbar bg-base-100 sticky top-0 left-0 z-10 shadow px-4 sm:justify-center lg:px-[139px]'
@@ -32,7 +35,7 @@ export const Navbar = () => {
                 <input
                   type='checkbox'
                   className='theme-controller'
-                  value='forest'
+                  value={toggleTheme}
                 />
 
                 <svg
@@ -75,7 +78,7 @@ export const Navbar = () => {
               <input
                 type='checkbox'
                 className='theme-controller'
-                value='forest'
+                value={toggleTheme}
               />
 
               <svg
