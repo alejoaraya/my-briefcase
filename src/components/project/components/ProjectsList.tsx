@@ -30,7 +30,7 @@ export const ProjectsList = () => {
       <ProjectItem
         redirect_url='StockWise'
         image_url="https://github.com/alejoaraya/StockWiseApp/raw/develop/Client/src/components/logo-cmp/logo.svg"
-        info_url={{ github: "https://github.com/alejoaraya/StockWiseApp", demo: "https://stockwise-client.vercel.app/login", figma: "https://www.figma.com/proto/lIB64kDohOKOsdSNGkOSue/c14-22-ft-java-react?node-id=72-10333&starting-point-node-id=72%3A10456" }}
+        info_url={{ github: "https://github.com/alejoaraya/StockWiseApp", demo: "https://stockwise.alejoaraya.online/login", figma: "https://www.figma.com/proto/lIB64kDohOKOsdSNGkOSue/c14-22-ft-java-react?node-id=72-10333&starting-point-node-id=72%3A10456" }}
         video_url="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXVnM2NqbnRqbTMzdW94dDZsdTE2YnAwNzJ0aHpkbGtocjk2eGduMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cXMFmN3edhlHI5vRsG/giphy.gif"
         description='Sistema de gestión de inventario diseñado para pequeñas empresas que permite controlar y organizar sus productos de manera simple y eficiente. La plataforma facilita el seguimiento del stock, la gestión de transacciones y la generación de alertas e informes en tiempo real, ayudando a reducir errores y a reemplazar el uso de planillas manuales o registros dispersos.
 '
