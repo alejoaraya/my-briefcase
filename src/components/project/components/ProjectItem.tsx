@@ -1,7 +1,6 @@
 import { FaGithub, FaGlobe } from "react-icons/fa";
 import { IconType } from "react-icons";
 import { FaFigma } from "react-icons/fa6";
-import { useNavigate } from "react-router";
 import { useState } from "react";
 import { cn } from "../../../lib/util";
 import { Button } from "../..";
@@ -23,7 +22,6 @@ interface Props {
   description: string;
   image_url?: string;
   video_url?: string;
-  redirect_url: string;
 }
 
 export const ProjectItem = ({
@@ -33,10 +31,8 @@ export const ProjectItem = ({
   description,
   image_url = 'https://4kwallpapers.com/images/walls/thumbs_3t/25729.jpg',
   video_url,
-  redirect_url
 }:
   Props) => {
-  const navigate = useNavigate()
   const [hoverFlag, setHoverFlag] = useState(false)
 
   const handleMouseEnter = () => {
@@ -51,9 +47,6 @@ export const ProjectItem = ({
     }
   };
 
-  const redirect = (url: string) => {
-    navigate(`/project/${url}`)
-  }
 
 
 
