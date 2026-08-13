@@ -1,0 +1,1 @@
+No modificar nada de la carpeta a menos de que te lo pida explicitamente
