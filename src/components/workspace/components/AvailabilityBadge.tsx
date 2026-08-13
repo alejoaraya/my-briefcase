@@ -1,13 +1,13 @@
-export const AvailabilityBadge = ({ compact = false }) => (
+export const AvailabilityBadge = ({ badgeName }: { badgeName: string }) => (
     <div className="flex items-center h-full gap-2 sm:gap-3 mt-3 sm:mt-0">
         <div className="inline-grid *:[grid-area:1/1]">
-            <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 status status-primary animate-ping"></div>
-            <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 status status-primary"></div>
+            <div className="w-3 h-3 sm:w-3 sm:h-3 status status-primary animate-ping"></div>
+            <div className="w-3 h-3 sm:w-3 sm:h-3 status status-primary"></div>
         </div>
         <p
-            className={`px-4 ${compact ? "py-2 text-xs sm:text-sm md:text-base" : "py-3 text-xs sm:text-sm"} font-bold badge badge-primary `}
+            className={`px-4 "py-3" text-base lato-bold badge badge-primary `}
         >
-            Disponible para trabajar
+            {badgeName}
         </p>
     </div>
 );

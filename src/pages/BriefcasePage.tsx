@@ -8,9 +8,8 @@ export const BriefcasePage = () => {
   return (
     <ContentLayout>
       <HeroSection />
-      <ProjectsSection />
-      {/* <Separate /> */}
       <WorkspaceSection />
+      <ProjectsSection />
       <StackSection />
       <AboutSection />
     </ContentLayout>

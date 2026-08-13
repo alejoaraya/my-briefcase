@@ -1,30 +1,41 @@
 import { ContentSection } from "../ui";
+
+import {
+  FigmaIcon,
+  JavaIcon,
+  MysqlIcon,
+  ReactIcon,
+  TailwindcssIcon,
+  TypescriptIcon,
+} from "../../assets/icons";
+
+
 import { WorkItem } from "./components/WorkItem";
 import { Timeline } from "./components/Timeline";
-import { GrMysql, GrReactjs, GrValidate } from "react-icons/gr";
-import { SiFigma, SiMongodb, SiTailwindcss, SiTypescript } from "react-icons/si";
-import { FaJava } from "react-icons/fa";
+
+
+import { useTranslate } from "../../hooks/useTranslate";
+import { BadgeCheck } from "lucide-react";
+
 
 export const WorkspaceSection = () => {
+
+  const { t } = useTranslate()
+
   return (
     <ContentSection
       id='workspace'
-      // text="Here you will find an overview of the professional roles and projects I've worked on, with each experience highlighting the back-end technologies and solutions I contributed to."
-      text=''
-      title='EXPERIENCIA PROFESIONAL'
+      title={t.workspace.title}
     >
       <div className='flex flex-row h-full gap-5'>
         <Timeline />
         <div className='flex flex-col gap-18 lg:gap-24'>
           <WorkItem
-            company='KONECTA'
-            date='Jun 2025 - Actualidad'
-            description='Atención y registro de incidencias técnicas, soporte remoto en
-                software y hardware, escalamiento de problemas a nivel superior,
-                seguimiento y cierre de tickets, y documentación de soluciones
-                en la base de conocimientos.'
             isCurrent
-            title='Help Desk Analyst'
+            company={t.workspace.currentJobInformation.enterprise}
+            date={t.workspace.currentJobInformation.dateStart + " - " + t.workspace.currentJobInformation.dateEnd}
+            description={t.workspace.currentJobInformation.desctiption}
+            title={t.workspace.currentJobInformation.title}
             key={1}
           />
 
@@ -36,36 +47,33 @@ export const WorkspaceSection = () => {
                 tutoría y formación de equipo, comunicación y coordinación,
                 resolución de problemas y soporte técnico.'
             stack={[
-              { element: <GrReactjs />, name: "React " },
-              { element: <SiTailwindcss />, name: "Tailwind.css " },
-              { element: <SiTypescript />, name: "TS / JS " },
-              { element: <SiFigma />, name: "Figma " },
+              { element: <ReactIcon />, name: "React " },
+              { element: <TailwindcssIcon />, name: "Tailwind.css " },
+              { element: <TypescriptIcon />, name: "TS / JS " },
+              { element: <FigmaIcon />, name: "Figma " },
             ]}
             key={2}
           /> */}
 
           <WorkItem
-            title='Desarrollador Web'
-            company='RED DE SALUD TECNOLÓGICA (RST)'
-            date='May 2023 - Jul 2024'
-            description='Colaboración en el desarrollo de la interfaz de usuario,
-                desarrollo de componentes de React, integración de APIs,
-                optimización del rendimiento y mantenimiento del código.'
+            title={t.workspace.devJobInformation.title}
+            company={t.workspace.devJobInformation.enterprise}
+            date={t.workspace.devJobInformation.dateStart + " - " + t.workspace.devJobInformation.dateEnd}
+            description={t.workspace.devJobInformation.desctiption}
             stack={[
-              { element: <GrReactjs />, name: "React " },
-              { element: <SiTailwindcss />, name: "Tailwind.css " },
-              { element: <SiTypescript />, name: "TS / JS " },
-              { element: <SiFigma />, name: "Figma " }
+              { element: ReactIcon, name: "React " },
+              { element: TailwindcssIcon, name: "Tailwind.css " },
+              { element: TypescriptIcon, name: "TS / JS " },
+              { element: FigmaIcon, name: "Figma " }
             ]}
             key={3}
           />
 
           <WorkItem
-            title='Mantenimiento y Reparación de Computadoras'
-            company='Emprendimiento'
-            date='Mar 2018 - Actualidad'
-            description=' Resolución de problemas de software, armado de PC, recuperación
-                de datos y mantenimiento de servidores.'
+            title={t.workspace.supportJobInformation.title}
+            company={t.workspace.supportJobInformation.enterprise}
+            date={t.workspace.supportJobInformation.dateStart + " - " + t.workspace.supportJobInformation.dateEnd}
+            description={t.workspace.supportJobInformation.desctiption}
             key={4}
           />
         </div>
@@ -77,10 +85,10 @@ export const WorkspaceSection = () => {
         {/* title */}
         <div className='flex gap-3 mb-7 place-items-center'>
           <div className='h-4 bg-base-100'>
-            <GrValidate className='w-5 h-5 stroke-primary ' />
+            <BadgeCheck className='w-5 h-5 stroke-primary ' />
           </div>
           <div className='place-self-start'>
-            <h1 className='text-xl tracking-wider poppins-bold '>Estudios</h1>
+            <h3 className='text-xl tracking-wider poppins-bold '>{t.workspace.subtitle}</h3>
             <div className='w-full h-1 rounded bg-primary'></div>
           </div>
         </div>
@@ -88,44 +96,38 @@ export const WorkspaceSection = () => {
         {/* experience */}
         <div className='flex flex-col gap-14 lg:grid lg:grid-cols-2 lg:gap-12'>
           <div className='flex flex-col col-span-1 gap-2'>
-            <h1 className='uppercase card-title  '>
-              Tecnicatura Superior en Programación
-            </h1>
-            <h3 className='uppercase stat-title text-sm lg:text-base'>
+            <h4 className='uppercase card-title text-xl '>
+              {t.workspace.studyUniversitaryInformation.title}
+            </h4>
+            <p className='uppercase stat-title text-base '>
               Universidad Tecnológica Nacional
-            </h3>
-            <h6 className="text-gray-500">Argentina</h6>
-            <h5 className='text-primary text-sm lg:text-base'>Ago 2021 - Nov 2023</h5>
+            </p>
+            <p className="text-gray-500">Argentina</p>
+            <p className='text-primary '>{t.workspace.studyUniversitaryInformation.dateStart + " - " + t.workspace.studyUniversitaryInformation.dateEnd}</p>
             <div className='flex flex-wrap gap-2'>
-              <div className='border badge badge-primary  badge-sm xs:bagde-md sm:badge-md lg:badge-lg badge-soft border-primary'>
-                <FaJava />
-                Java
+              <div className='border badge badge-primary  badge-lg badge-soft border-primary'>
+                <JavaIcon aria-hidden className="text-primary" /> <span>Java</span>
               </div>
-              <div className='border badge badge-primary  badge-sm xs:bagde-md sm:badge-md lg:badge-lg badge-soft border-primary'>
-                <GrReactjs />
-                React.ts
+              <div className='border badge badge-primary  badge-lg badge-soft border-primary'>
+                <TypescriptIcon aria-hidden className="text-primary" /> <span>TypeScript</span>
               </div>
-              <div className='border badge badge-primary  badge-sm xs:bagde-md sm:badge-md lg:badge-lg badge-soft border-primary'>
-                <GrMysql />
-                MySQL
+              <div className='border badge badge-primary  badge-lg badge-soft border-primary'>
+                <MysqlIcon aria-hidden className="text-primary" /> <span>MySQL</span>
               </div>
-              <div className='border badge badge-primary  badge-sm xs:bagde-md sm:badge-md lg:badge-lg badge-soft border-primary'>
-                <SiMongodb />
-                MongoDB
-              </div>
+
             </div>
           </div>
           <div className='flex flex-col col-span-1 gap-2 '>
-            <h1 className='card-title '>
-              Manteniemiento y Reparacion de Computadoras
-            </h1>
-            <h3 className='uppercase stat-title '>
+            <h4 className='card-title text-xl'>
+              {t.workspace.supportStudyInformation.title}
+            </h4>
+            <p className='uppercase stat-title text-base '>
               Newton - Escuela de capacitación
-            </h3>
-            <h6 className="text-gray-500">Argentina</h6>
-            <h5 className='text-primary'>Mar 2018 - Mar 2019</h5>
+            </p>
+            <p className="text-gray-500 text-base">Argentina</p>
+            <p className='text-primary text-base'>{t.workspace.supportStudyInformation.dateStart + " - " + t.workspace.supportStudyInformation.dateEnd}</p>
           </div>
-          <div></div>
+
         </div>
       </div>
     </ContentSection>

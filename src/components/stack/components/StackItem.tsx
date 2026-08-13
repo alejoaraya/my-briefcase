@@ -1,19 +1,18 @@
-import { IconType } from "react-icons"
-
 
 interface Props {
     stack: {
         title: string,
-        icon?: IconType
+        icon?: React.FC<React.SVGProps<SVGSVGElement>>
         isImportant?: boolean
     }
 }
 
-export const StackItem = ({ stack }: Props) => {
+export const StackItem = ({ stack: { title, icon: Icon, isImportant } }: Props) => {
+
+
     return (
-        <h1 className={`border  badge-sm xs:bagde-md sm:badge-lg badge  badge-soft border-primary text-primary badge-primary ${stack.isImportant ? 'font-bold' : ''} flex flex-row gap-2 items-center`}>
-            {stack.icon && <stack.icon />}
-            {stack.title}
-        </h1>
+        <div className={`border badge-lg badge  badge-soft border-primary text-primary badge-primary ${isImportant ? 'lato-bold' : ''} flex flex-row gap-2 items-center`}>
+            {Icon && <Icon aria-hidden />} <span>{title}</span>
+        </div>
     )
 }

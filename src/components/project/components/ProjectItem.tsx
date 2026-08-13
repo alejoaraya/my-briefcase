@@ -1,10 +1,15 @@
-import { FaGithub, FaGlobe } from "react-icons/fa";
-import { IconType } from "react-icons";
-import { FaFigma } from "react-icons/fa6";
-import { useState } from "react";
+
+import { type Variants, motion } from "framer-motion";
+
+import { Globe } from "lucide-react";
+
+import {
+  FigmaIcon,
+  GithubIcon,
+} from "../../../assets/icons";
+
 import { cn } from "../../../lib/util";
 import { Button } from "../..";
-import { type Variants, motion } from "framer-motion";
 
 
 
@@ -15,13 +20,15 @@ interface Props {
     figma?: string
   },
   stack: {
-    icon: IconType,
+    icon: React.FC<React.SVGProps<SVGSVGElement>>,
     name: string
   }[],
   title: string;
   description: string;
   image_url?: string;
-  video_url?: string;
+  outstanding?: boolean;
+  badgeName: string;
+  demoButtonText: string
 }
 
 export const ProjectItem = ({
@@ -29,23 +36,13 @@ export const ProjectItem = ({
   stack,
   title,
   description,
-  image_url = 'https://4kwallpapers.com/images/walls/thumbs_3t/25729.jpg',
-  video_url,
+  outstanding,
+  image_url = '/assets/projects-images/25729.webp',
+  badgeName,
+  demoButtonText,
 }:
   Props) => {
-  const [hoverFlag, setHoverFlag] = useState(false)
 
-  const handleMouseEnter = () => {
-    if (window.matchMedia("(min-width: 1024px)").matches) {
-      setHoverFlag(true);
-    }
-  };
-
-  const handleMouseLeave = () => {
-    if (window.matchMedia("(min-width: 1024px)").matches) {
-      setHoverFlag(false);
-    }
-  };
 
 
 
@@ -75,146 +72,61 @@ export const ProjectItem = ({
       viewport={{ once: true, amount: 0.2 }}
     >
       <div
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-
         className={cn(
           "card card-body h-full justify-between shadow-sm bg-base-100 border border-primary rounded-3xl ease-in transition-all duration-200",
           "flex flex-col items-center gap-5 p-0",
-          "lg:flex-row lg:items-center lg:gap-12 lg:p-6 lg:hover:bg-primary/5 lg:hover:h-[600px]"
+          "lg:flex-row lg:items-center lg:gap-12 lg:p-6 lg:hover:bg-primary/5 lg:hover:h-[600px]",
+          outstanding && "bg-primary/2",
         )}
       >
-        <div className="relative w-full lg:w-auto">
 
-          {/* MOBILE */}
-          <img
-            src={video_url}
-            alt="wallpaper"
-            className="block w-full object-contain rounded-2xl lg:hidden"
-          />
-
-          {/* DESKTOP */}
-          <img
-            src={hoverFlag ? video_url : image_url}
-            alt="wallpaper"
-            className={cn(
-              "hidden object-contain rounded-3xl lg:block lg:transition lg:ease-in-out lg:duration-100",
-              hoverFlag
-                ? "lg:h-full lg:w-80 lg:border lg:border-primary/20"
-                : "lg:h-32 lg:w-60"
-            )}
-          />
+        {/* BANNER */}
+        <img loading="lazy" alt={title + ' - ' + badgeName} src={image_url} className="block w-full object-contain rounded-3xl lg:hidden  h-48"></img>
 
 
-          {hoverFlag && (
-            <>
-              <img
-                src={video_url}
-                alt="preview"
-                className="hidden lg:block absolute inset-0 object-contain w-full h-full rounded-3xl"
-              />
-              <img
-                src={image_url}
-                alt="logo"
-                className="hidden lg:block object-scale-down size-20 absolute bottom-1 left-4/5 p-1 rounded-full bg-base-100 shadow"
-              />
-            </>
-          )}
-        </div>
+        {/* BODY */}
+        <div className="flex-1 gap-4 h-full flex flex-col justify-center p-5 lg:p-0">
+          <div className="flex flex-col gap-4 justify-between">
+            <div className="flex justify-between">
 
-        <div className="flex-1 gap-7 h-full flex flex-col justify-center p-5 lg:p-0">
-          <div className="flex flex-col gap-7 justify-between">
-            <div className="flex gap-5 absolute right-6 lg:top-6 ">
-              <div className="tooltip" data-tip="GitHub">
-                <a
-                  href={info_url.github}
-                  onClick={(e) => e.stopPropagation()}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <FaGithub
-                    className={cn(
-                      "stroke-primary fill-primary size-6 hover:scale-105 transition duration-100 ease-out",
-                      hoverFlag && "lg:size-8"
-                    )}
-                  />
-                </a>
+              <div className="flex gap-3 items-start justify-between lg:relative">
+                <h3 className="card-title text-[22px]">
+                  {title}
+                </h3>
               </div>
-
-              {info_url.demo && (
-                <div className="tooltip" data-tip="Demo">
-                  <a
-                    href={info_url.demo}
-                    onClick={(e) => e.stopPropagation()}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <FaGlobe
-                      className={cn(
-                        "stroke-primary fill-primary size-6 hover:scale-105 transition duration-100 ease-out",
-                        hoverFlag && "lg:size-8"
-                      )}
-                    />
-                  </a>
-                </div>
-              )}
-
-              {info_url.figma && (
-                <div className="tooltip" data-tip="Figma">
-                  <a
-                    href={info_url.figma}
-                    onClick={(e) => e.stopPropagation()}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <FaFigma
-                      className={cn(
-                        "stroke-primary fill-primary size-6 hover:scale-105 transition duration-100 ease-out",
-                        hoverFlag && "lg:size-8"
-                      )}
-                    />
-                  </a>
-                </div>
-              )}
-            </div>
-            <div className="flex gap-3 items-start justify-between lg:relative">
-              <h1 className={cn("card-title", hoverFlag && "lg:text-3xl lg:font-extrabold")}>
-                {title}
-              </h1>
-
-
+              <div
+                key={title + description}
+                className={"border badge-md badge badge-primary badge-soft border-primary text-lg"}
+              >
+                <span>{badgeName}</span>
+              </div>
             </div>
 
-            <p className={cn(hoverFlag && "lg:text-lg")}>{description}</p>
+            <p className="text-lg">{description}</p>
           </div>
 
-          <div className="flex justify-between flex-col gap-7">
+          <div className="flex justify-between flex-col gap-4">
             <div className="flex flex-wrap gap-2">
               {stack.map((tech, index) => (
-                <h1
+                <div
                   key={`${tech.name}-${index}`}
-                  className={cn(
-                    "border badge-md badge badge-primary badge-soft border-primary",
-                    hoverFlag && "lg:badge-lg lg:text-lg lg:p-1.5"
-                  )}
+                  className={"border badge-lg badge badge-primary badge-soft border-primary"}
                 >
-                  <tech.icon />
-                  {tech.name}
-                </h1>
+                  <tech.icon aria-hidden /><span>{tech.name}</span>
+                </div>
               ))}
             </div>
 
-            <div className="block lg:hidden">
-              {info_url.demo && (
-                <Button size="w-32" text="Ver Demo" url={info_url.demo} blank />
-              )}
+
+            <div className="flex flex-col gap-4">
+              <Button size="full" icon={Globe} text={demoButtonText} url={info_url.demo} blank />
+              <div className="grid grid-cols-2 gap-4">
+                <Button size="full" variant="outline" icon={GithubIcon} text="Github" url={info_url.github} blank />
+                <Button size="full" variant="outline" icon={FigmaIcon} text="Figma" url={info_url.figma} blank />
+              </div>
             </div>
 
-            <div className="hidden lg:block">
-              {hoverFlag && info_url.demo && (
-                <Button size="w-32" text="Ver Demo" url={info_url.demo} blank />
-              )}
-            </div>
+
           </div>
         </div>
       </div>

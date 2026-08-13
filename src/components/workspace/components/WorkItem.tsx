@@ -1,4 +1,3 @@
-import { ReactElement } from "react";
 
 interface Job {
   title: string;
@@ -10,7 +9,7 @@ interface Job {
 }
 
 interface Stack {
-  element: ReactElement;
+  element: React.FC<React.SVGProps<SVGSVGElement>>;
   name: string;
 }
 
@@ -26,29 +25,32 @@ export const WorkItem = ({
     <>
       <div className='flex flex-col gap-5 lg:grid lg:grid-cols-3 lg:gap-10'>
         {isCurrent ? (
-          <div className='inline-grid absolute w-3 h-3 translate-y-2 rounded-full -translate-x-[1.70rem] bg-primary *:[grid-area:1/1]'>
+          <div className='inline-grid absolute w-3 h-3 translate-y-2 rounded-full -translate-x-[1.60rem] bg-primary *:[grid-area:1/1]'>
             <div className='w-3 h-3 status status-primary animate-ping'></div>
             <div className='w-3 h-3 status status-primary'></div>
           </div>
         ) : (
-          <div className='absolute w-3 h-3 translate-y-2 rounded-full -translate-x-[1.70rem] bg-primary'></div>
+          <div className='absolute w-3 h-3 translate-y-2 rounded-full -translate-x-[1.60rem] bg-primary'></div>
         )}
 
         <div className='flex flex-col w-full col-span-1 gap-1'>
-          <h1 className='card-title text-base sm:text-lg '>{title}</h1>
-          <h3 className='stat-title '>{company}</h3>
-          <h5 className={`${isCurrent && "font-bold"} text-primary text-sm lg:text-base`}>{date}</h5>
+          <h3 className='card-title text-xl '>{title}</h3>
+          <p className='stat-title text-base '>{company}</p>
+          <p className={`${isCurrent && "lato-bold"} text-primary text-base`}>{date}</p>
         </div>
 
-        <div className='flex text-sm lg:text-base flex-col items-start justify-start col-span-2 gap-2 text-justify'>
+        <div className='flex lg:text-base flex-col items-start justify-start col-span-2 gap-2 text-lg'>
           <p>{description}</p>
           {stack && (
             <div className='flex flex-wrap gap-2'>
-              {stack.map((tech: Stack) => (
-                <div key={tech.name} className='border badge badge-primary badge-sm xs:bagde-md sm:badge-md lg:badge-lg badge-soft border-primary'>
-                  {tech.element} {tech.name}
-                </div>
-              ))}
+              {stack.map((tech: Stack) => {
+                const Icon = tech.element
+                return ((
+                  <div key={tech.name} className='border badge badge-primary badge-lg badge-soft border-primary'>
+                    <Icon aria-hidden /> <span>{tech.name}</span>
+                  </div>
+                ))
+              })}
             </div>
           )}
         </div>

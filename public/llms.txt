@@ -1,0 +1,37 @@
+# Alejo Araya
+
+> Desarrollador Front-End especializado en React, TypeScript y Tailwind CSS. Portfolio personal con experiencia profesional, proyectos destacados y datos de contacto. Versión en inglés disponible en /en/llms.txt.
+
+Creo interfaces modernas, responsivas y funcionales, enfocadas en brindar una buena experiencia de usuario. Actualmente trabajo con React, TypeScript, JavaScript y Tailwind CSS.
+
+## Sobre mí
+- Desarrollador Front-End con experiencia en soporte técnico y desarrollo de aplicaciones web. Me interesa crear interfaces claras, funcionales y bien estructuradas, cuidando tanto la experiencia del usuario como la calidad del código.
+- Disponible para trabajar.
+
+## Experiencia profesional
+- Help Desk Analyst — KONECTA (Jun 2025 - Actualidad): Atención y registro de incidencias técnicas, soporte remoto en software y hardware, escalamiento de problemas, seguimiento y cierre de tickets, y documentación de soluciones en la base de conocimientos.
+- Desarrollador Web — Red de Salud Tecnológica, RST (May 2023 - Jul 2024): Colaboración en el desarrollo de la interfaz de usuario, desarrollo de componentes de React, integración de APIs, optimización del rendimiento y mantenimiento del código.
+- Mantenimiento y Reparación de Computadoras — Emprendimiento propio (Mar 2019 - Actualidad): Resolución de problemas de software, armado de PC, recuperación de datos y mantenimiento de servidores.
+
+## Estudios
+- Tecnicatura Superior en Programación — Universidad Tecnológica Nacional (Ago 2021 - Nov 2023)
+- Mantenimiento y Reparación de Computadoras — Newton, Escuela de Capacitación (Mar 2018 - Mar 2019)
+
+## Proyectos destacados
+- [Cachavacha ERP](https://cachavacha-frontend.vercel.app/): Plataforma web para digitalización y gestión de alquileres de disfraces. Centraliza clientes, stock, reservas y comprobantes en tiempo real. Stack: React, TypeScript, Tailwind CSS, Redux Toolkit, React Router 7. Repo: https://github.com/raxtech-solution/Cachavacha-Frontend
+- [RaxTech SPA](https://raxtech-landing-page.vercel.app/): Landing page de RaxTech, estudio de soluciones tecnológicas: sitios web, sistemas de gestión, automatización de tareas y asistentes con IA. Stack: React, TypeScript, Tailwind CSS, React Router 7. Repo: https://github.com/raxtech-solution/raxtech-landing-page
+- [Cachavacha SPA](https://cachavacha-landing-page.vercel.app/): Landing page de alquiler de disfraces en Mendoza. Muestra el catálogo de personajes para fiestas temáticas, con foco en variedad y calidad. Stack: React, TypeScript, Tailwind CSS, React Router 7. Repo: https://github.com/raxtech-solution/cachavacha-landing-page
+- [Braided SPA](https://braided-landing-page.vercel.app/): Landing page de Braided: estampado, sublimado y vinilo textil para indumentaria en Mendoza, para empresas, eventos y particulares. Stack: React, TypeScript, Tailwind CSS, React Router 7. Repo: https://github.com/raxtech-solution/braided-landing-page
+
+## Habilidades
+- Front-end: React, TypeScript, JavaScript, Tailwind CSS
+- Herramientas y habilidades blandas: Resolución de problemas, comunicación, capacidad analítica, adaptabilidad
+
+## Contacto
+- [GitHub](https://github.com/alejoaraya)
+- [LinkedIn](https://www.linkedin.com/in/alejoaraya/)
+- [WhatsApp](https://wa.me/+5492612589882)
+
+## Optional
+- [CV en PDF](https://drive.google.com/file/d/1QnVRiGQYgbK_xzaljWfeNeJs6IWbZsyK/view?usp=sharing)
+- [English version](https://www.alejoaraya.online/en) — texto equivalente en /en/llms.txt

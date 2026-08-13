@@ -1,40 +1,34 @@
+import { useTranslate } from "../../hooks/useTranslate";
 import { ContentSection } from "../ui";
-import { PersonalInformation } from "./components/PersonalInformation";
 
 export const AboutSection = () => {
+
+  const { t } = useTranslate()
+
   return (
     <ContentSection
       id='about'
-      // text='Here you will find more information about me, what I do, and my current skills, primarily in back-end development and technology.'
-      text=''
-      title='SOBRE MÍ'
+      title={t.about.title}
     >
       <div className='grid grid-cols-1 gap-10 md:gap-20  lg:grid-cols-2'>
-        <PersonalInformation />
-        <div className='flex  lg:place-self-center flex-col gap-4 shadow bg-[url("/assets/jpeg/avatar.jpeg")] bg-center bg-cover place-items-center place-content-center rounded-4xl lg:w-[26rem] lg:py-5 h-96 lg:h-full'>
-          {/* <div className='border-4 border-white rounded-full'>
-            <img
-              className='rounded-full w-80 lg:w-60'
-              src='/assets/jpeg/avatar.jpeg'
-            />
-          </div> */}
-          {/* <div className='flex flex-col gap-3 lg:gap-2'>
-            <a
-              href='https://wa.me/+5492612589882'
-              target='_blank'
-              className='border-2 btn btn-primary border-primary'
-            >
-              Envieme un whatsapp
-            </a>
-            <a
-              href='mailto:alejoaraya2000@gmail.com'
-              target='_blank'
-              className='border-2 btn btn-primary border-primary'
-            >
-              Envieme un mail
-            </a>
-          </div> */}
+        <div className='flex flex-col gap-8'>
+          <div className='flex flex-col gap-3 text-base'>
+            <p>
+              {t.about.firstParagraph}
+            </p>
+            <p>
+              {t.about.secondParagraph}
+            </p>
+          </div>
         </div>
+        <img
+          src="/assets/avatar/normal_avatar.webp"
+          alt="personal_about_image"
+          loading="lazy"
+          height={384} width={'100%'}
+          className='flex  lg:place-self-center flex-col gap-4 shadow object-center place-items-center place-content-center rounded-4xl lg:w-[26rem] lg:py-5 h-96 lg:h-full' />
+
+
       </div>
     </ContentSection >
   );

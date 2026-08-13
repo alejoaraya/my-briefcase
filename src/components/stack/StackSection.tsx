@@ -1,84 +1,120 @@
+import {
+  CssIcon,
+  DockerIcon,
+  FigmaIcon,
+  GitIcon,
+  GithubIcon,
+  HibernateIcon,
+  Html5Icon,
+  JavaIcon,
+  JavascriptIcon,
+  Junit5Icon,
+  MysqlIcon,
+  PostmanIcon,
+  ReactIcon,
+  SassIcon,
+  SpringbootIcon,
+  SwaggerIcon,
+  TailwindcssIcon,
+  TypescriptIcon,
+} from "../../assets/icons";
+
 import { ContentSection } from "../ui";
 import { StackItem } from "./components/StackItem";
-import { IconType } from "react-icons";
 
-import { GrReactjs } from "react-icons/gr";
-import { SiApachemaven, SiAstro, SiAxios, SiCss3, SiDaisyui, SiDocker, SiFormik, SiGit, SiGithub, SiHibernate, SiHtml5, SiJavascript, SiJest, SiJunit5, SiLinux, SiMaterialdesign, SiMongodb, SiMysql, SiNextdotjs, SiPostman, SiSass, SiShadcnui, SiSpringboot, SiSwagger, SiTailwindcss, SiTestinglibrary, SiTypescript } from "react-icons/si";
-import { FaJava, FaWindows } from "react-icons/fa";
-import { VscVscode } from "react-icons/vsc";
+import { useTranslate } from "../../hooks/useTranslate";
 
-const stacksTech: Stack[] = [
-  { title: "JavaScript", icon: SiJavascript, isImportant: true },
-  { title: "TypeScript", icon: SiTypescript, isImportant: true },
-  { title: "React", icon: GrReactjs, isImportant: true },
-  { title: "Next.js", icon: SiNextdotjs, isImportant: true },
-  { title: "Tailwind.css", icon: SiTailwindcss, isImportant: true },
-  { title: "Java", icon: FaJava, isImportant: true },
-  { title: "MySQL", icon: SiMysql, isImportant: true },
-  { title: "SpringBoot", icon: SiSpringboot, isImportant: true },
-  { title: "Git", icon: SiGit, isImportant: true },
-  { title: "Docker", icon: SiDocker, isImportant: true },
-  { title: "HTML", icon: SiHtml5 },
-  { title: "CSS", icon: SiCss3 },
-  { title: "Sass", icon: SiSass },
-  { title: "Astro", icon: SiAstro },
-  { title: "MongoDB", icon: SiMongodb },
-  { title: "GitHub", icon: SiGithub },
-  { title: "VSCode", icon: VscVscode },
-  { title: "Linux", icon: SiLinux },
-  { title: "Windows", icon: FaWindows },
-  { title: "Formik", icon: SiFormik },
-  { title: "Axios", icon: SiAxios },
-  { title: "Jest", icon: SiJest },
-  { title: "React-test-library", icon: SiTestinglibrary },
-  { title: "DaisyUI", icon: SiDaisyui },
-  { title: "Shadcn", icon: SiShadcnui },
-  { title: "MaterialUI", icon: SiMaterialdesign },
-  { title: "Hibernate", icon: SiHibernate },
-  { title: "Maven", icon: SiApachemaven },
-  { title: "JUnit5", icon: SiJunit5 },
-  { title: "Postman", icon: SiPostman },
-  { title: "Swagger", icon: SiSwagger },
+const stacksFontend: Stack[] = [
+  { title: "React", icon: ReactIcon, isImportant: true },
+  { title: "TypeScript", icon: TypescriptIcon, isImportant: true },
+  { title: "Tailwind.css", icon: TailwindcssIcon, isImportant: true },
+  { title: "JavaScript", icon: JavascriptIcon, isImportant: true },
+  { title: "HTML", icon: Html5Icon },
+  { title: "CSS", icon: CssIcon },
+  { title: "Sass", icon: SassIcon },
+  { title: "Figma", icon: FigmaIcon },
 ]
+const stacksBackend: Stack[] = [
 
-const softskills: Stack[] = [
-  { title: "Resolución de Problemas", isImportant: true },
-  { title: "Comunicación", isImportant: true },
-  { title: "Capacidad Analitica", isImportant: true },
-  { title: "Adaptabilidad", isImportant: true },
-  { title: "Gestión del Tiempo y Organización" },
-  { title: "Trabajo en Equipo" },
-  { title: "Estructura de Datos y Algoritmos" },
-  { title: "Aprendizaje Continuo" },
-  { title: "Creatividad e inovación" },
-  { title: "Liderazgo" },
-  { title: "Procedimiento de Prueba" },
-  { title: "Conocimiento de Depuración" },
-
+  { title: "Java", icon: JavaIcon, isImportant: true },
+  { title: "SpringBoot", icon: SpringbootIcon, isImportant: true },
+  { title: "Hibernate", icon: HibernateIcon },
+  { title: "JUnit5", icon: Junit5Icon },
+  { title: "Swagger", icon: SwaggerIcon },
+  { title: "MySQL", icon: MysqlIcon, isImportant: true },
+]
+const stacksTools: Stack[] = [
+  { title: "Git", icon: GitIcon, isImportant: true },
+  { title: "Docker", icon: DockerIcon, isImportant: true },
+  { title: "GitHub", icon: GithubIcon },
+  { title: "Postman", icon: PostmanIcon },
 ]
 
 interface Stack {
   title: string,
-  icon?: IconType,
+  icon?: React.FC<React.SVGProps<SVGSVGElement>>,
   isImportant?: boolean
 }
 
 export const StackSection = () => {
+  const { t } = useTranslate()
+
   return (
-    <ContentSection id='stack' text='' title='HABILIDADES'>
-      <div className='flex flex-row flex-wrap gap-3 lg:gap-x-4 '>
-        {
-          stacksTech.map((stack, index) => (
-            <StackItem key={`${stack.title}-${index}`} stack={stack} />
-          ))
-        }
+    <ContentSection id='stack' title={t.skills.title}>
+      <div className="flex gap-2.5 flex-col">
+        <div className="flex items-center gap-9">
+          <div className='w-3 h-3 status status-primary'></div>
+          <h3 className="text-xl lato-bold">Front-end</h3>
+        </div>
+        <div className='flex flex-row flex-wrap gap-3 lg:gap-x-4 '>
+          {
+            stacksFontend.map((stack, index) => (
+              <StackItem key={`${stack.title}-${index}`} stack={stack} />
+            ))
+          }
+        </div>
       </div>
-      <div className='flex flex-row flex-wrap gap-3 lg:gap-x-4 '>
-        {
-          softskills.map((stack, index) => (
-            <StackItem key={`${stack.title}-${index}`} stack={stack} />
-          ))
-        }
+
+      <div className="flex gap-2.5 flex-col">
+        <div className="flex items-center gap-9">
+          <div className='w-3 h-3 status status-primary'></div>
+          <h3 className="text-xl lato-bold">{t.skills.backendTag}</h3>
+        </div>
+        <div className='flex flex-row flex-wrap gap-3 lg:gap-x-4 '>
+          {
+            stacksBackend.map((stack, index) => (
+              <StackItem key={`${stack.title}-${index}`} stack={stack} />
+            ))
+          }
+        </div>
+      </div>
+
+      <div className="flex gap-2.5 flex-col">
+        <div className="flex items-center gap-9">
+          <div className='w-3 h-3 status status-primary'></div>
+          <h3 className="text-xl lato-bold">{t.skills.toolsTag}</h3>
+        </div>
+        <div className='flex flex-row flex-wrap gap-3 lg:gap-x-4 '>
+          {
+            stacksTools.map((stack, index) => (
+              <StackItem key={`${stack.title}-${index}`} stack={stack} />
+            ))
+          }
+        </div>
+      </div>
+
+      <div className="flex gap-2.5 flex-col">
+        <div className="flex items-center gap-9">
+          <div className='w-3 h-3 status status-primary'></div>
+          <h3 className="text-xl lato-bold">{t.skills.softSkillTag}</h3>
+        </div>
+        <div className='flex flex-row flex-wrap gap-3 lg:gap-x-4 '>
+          {
+            t.skills.softSkillBadges.map((stack, index) => (
+              <StackItem key={`${stack.title}-${index}`} stack={stack} />
+            ))
+          }
+        </div>
       </div>
     </ContentSection>
   );

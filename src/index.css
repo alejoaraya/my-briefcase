@@ -1,12 +1,95 @@
 @import "tailwindcss";
 
 @plugin "daisyui" {
-  themes: winter --default, dim;
+  themes: briefcase --default;
+}
+
+@plugin "daisyui/theme" {
+  name: "briefcase";
+  default: true;
+  color-scheme: light;
+
+  /* Fondo general (#FAFAFA en todos los frames) */
+  --color-base-100: #FAFAFA;
+  --color-base-200: #F0F2F5;
+  --color-base-300: #E3E7ED;
+  --color-base-content: #000000;
+
+  /* Azul principal (#0069FF), usado en botones, links, badges y acentos */
+  --color-primary: #0057D6;
+  --color-primary-content: #FAFAFA;
+
+  /* Azul oscuro/gris usado en títulos y encabezados (#394E6A) */
+  --color-secondary: #394E6A;
+  --color-secondary-content: #FAFAFA;
+
+  /* Fondo claro de badges/chips (#EBF4FF) con texto azul primario */
+  --color-accent: #EBF4FF;
+  --color-accent-content: #0069FF;
+
+  /* Texto secundario / gris (#6A7282, rgba(57,78,106,.6)) */
+  --color-neutral: #6A7282;
+  --color-neutral-content: #FAFAFA;
+
+  --color-info: #0069FF;
+  --color-success: #16A34A;
+  --color-warning: #F59E0B;
+  --color-error: #DC2626;
+
+  /* Botones con radius:4px, badges con radius:16px (pill), cards con radius:24px */
+  --radius-selector: 1rem;
+  --radius-field: 0.25rem;
+  --radius-box: 1.5rem;
+
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+
+
+
 }
 
 
+
+@font-face {
+  font-family: 'Lato';
+  src: url('./assets/fonts/lato/Lato-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('./assets/fonts/lato/Lato-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/lato/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/lato/Poppins-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
 * {
-  font-family: Lato;
+  font-family: "Lato";
   scroll-behavior: smooth;
 }
 
