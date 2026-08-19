@@ -31,15 +31,7 @@ export const HeroSection = () => {
     try {
       await navigator.clipboard.writeText(EMAIL);
     } catch {
-      // Fallback para navegadores sin Clipboard API (http, permisos, etc.)
-      const textarea = document.createElement("textarea");
-      textarea.value = EMAIL;
-      textarea.style.position = "fixed";
-      textarea.style.opacity = "0";
-      document.body.appendChild(textarea);
-      textarea.select();
-      document.execCommand("copy");
-      document.body.removeChild(textarea);
+      alert('clipboard error'); //! Add a toast 
     }
     setCopied(true);
     setTimeout(() => setCopied(false), 1500);
@@ -75,7 +67,8 @@ export const HeroSection = () => {
           </div>
           <AvailabilityBadge badgeName={t.hero.hireBadge} />
         </div>
-        <div className="flex flex-col gap-6 md:gap-8 min-h-101 w-full">
+
+        <div className="flex flex-col gap-6 md:gap-8 w-full">
           <div className="flex flex-col gap-3 lg:gap-5 sm:text-left">
             <div className={`flex gap-2 items-start flex-col`}>
               <p className="lato-bold text-lg sm:text-2xl text-primary lg:text-3xl">{t.hero.specialization}</p>
