@@ -8,7 +8,11 @@ export const Navbar = () => {
 
   return (
     <header
-      className='navbar bg-base-100 px-[18px] items-center justify-end '
+      className='navbar bg-base-100   mx-auto px-4.5 items-center justify-end 
+      max-w-200 
+  lg:max-w-240 lg:px-6 
+  xl:max-w-300
+      '
     >
       <motion.button
         whileHover={{ color: 'var(--color-primary)' }}

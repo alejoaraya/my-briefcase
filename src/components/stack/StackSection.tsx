@@ -61,59 +61,63 @@ export const StackSection = () => {
 
   return (
     <ContentSection id='stack' title={t.skills.title}>
-      <div className="flex gap-2.5 flex-col">
-        <div className="flex items-center gap-9">
-          <div className='w-3 h-3 status status-primary'></div>
-          <h3 className="text-xl lato-bold">Front-end</h3>
+      <div className="grid grid-cols-1 gap-14
+      md:grid-cols-2
+      ">
+        <div className="flex gap-2.5 flex-col">
+          <div className="flex items-center gap-9">
+            <div className='w-3 h-3 status status-primary'></div>
+            <h3 className="text-xl lato-bold">Front-end</h3>
+          </div>
+          <div className='flex flex-row flex-wrap gap-3 lg:gap-x-4 '>
+            {
+              stacksFontend.map((stack, index) => (
+                <StackItem key={`${stack.title}-${index}`} stack={stack} />
+              ))
+            }
+          </div>
         </div>
-        <div className='flex flex-row flex-wrap gap-3 lg:gap-x-4 '>
-          {
-            stacksFontend.map((stack, index) => (
-              <StackItem key={`${stack.title}-${index}`} stack={stack} />
-            ))
-          }
-        </div>
-      </div>
 
-      <div className="flex gap-2.5 flex-col">
-        <div className="flex items-center gap-9">
-          <div className='w-3 h-3 status status-primary'></div>
-          <h3 className="text-xl lato-bold">{t.skills.backendTag}</h3>
+        <div className="flex gap-2.5 flex-col">
+          <div className="flex items-center gap-9">
+            <div className='w-3 h-3 status status-primary'></div>
+            <h3 className="text-xl lato-bold">{t.skills.backendTag}</h3>
+          </div>
+          <div className='flex flex-row flex-wrap gap-3 lg:gap-x-4 '>
+            {
+              stacksBackend.map((stack, index) => (
+                <StackItem key={`${stack.title}-${index}`} stack={stack} />
+              ))
+            }
+          </div>
         </div>
-        <div className='flex flex-row flex-wrap gap-3 lg:gap-x-4 '>
-          {
-            stacksBackend.map((stack, index) => (
-              <StackItem key={`${stack.title}-${index}`} stack={stack} />
-            ))
-          }
-        </div>
-      </div>
 
-      <div className="flex gap-2.5 flex-col">
-        <div className="flex items-center gap-9">
-          <div className='w-3 h-3 status status-primary'></div>
-          <h3 className="text-xl lato-bold">{t.skills.toolsTag}</h3>
+        <div className="flex gap-2.5 flex-col">
+          <div className="flex items-center gap-9">
+            <div className='w-3 h-3 status status-primary'></div>
+            <h3 className="text-xl lato-bold">{t.skills.toolsTag}</h3>
+          </div>
+          <div className='flex flex-row flex-wrap gap-3 lg:gap-x-4 '>
+            {
+              stacksTools.map((stack, index) => (
+                <StackItem key={`${stack.title}-${index}`} stack={stack} />
+              ))
+            }
+          </div>
         </div>
-        <div className='flex flex-row flex-wrap gap-3 lg:gap-x-4 '>
-          {
-            stacksTools.map((stack, index) => (
-              <StackItem key={`${stack.title}-${index}`} stack={stack} />
-            ))
-          }
-        </div>
-      </div>
 
-      <div className="flex gap-2.5 flex-col">
-        <div className="flex items-center gap-9">
-          <div className='w-3 h-3 status status-primary'></div>
-          <h3 className="text-xl lato-bold">{t.skills.softSkillTag}</h3>
-        </div>
-        <div className='flex flex-row flex-wrap gap-3 lg:gap-x-4 '>
-          {
-            t.skills.softSkillBadges.map((stack, index) => (
-              <StackItem key={`${stack.title}-${index}`} stack={stack} />
-            ))
-          }
+        <div className="flex gap-2.5 flex-col">
+          <div className="flex items-center gap-9">
+            <div className='w-3 h-3 status status-primary'></div>
+            <h3 className="text-xl lato-bold">{t.skills.softSkillTag}</h3>
+          </div>
+          <div className='flex flex-row flex-wrap gap-3 lg:gap-x-4 '>
+            {
+              t.skills.softSkillBadges.map((stack, index) => (
+                <StackItem key={`${stack.title}-${index}`} stack={stack} />
+              ))
+            }
+          </div>
         </div>
       </div>
     </ContentSection>

@@ -57,15 +57,19 @@ export const es = {
         title: "PROYECTOS DESTACADOS",
         cachavachaERPInformation: {
             description: "Plataforma web para digitalización y gestión de alquileres de disfraces. Centraliza clientes, stock, reservas y comprobantes en tiempo real.",
+            arialLabel: "Ver demostración de la ERP de cachavacha",
         },
         raxtechSPAInformation: {
             description: "Landing page de RaxTech, estudio de soluciones tecnológicas: sitios web, sistemas de gestión, automatización de tareas y asistentes con IA.",
+            arialLabel: "Ver demostración de la SPA de raxtech",
         },
         cachavachaSPAInformation: {
             description: "Landing page de alquiler de disfraces en Mendoza. Muestra el catálogo de personajes para fiestas temáticas, con foco en variedad y calidad.",
+            arialLabel: "Ver demostración de la SPA de cachavacha",
         },
         braidedSPAInformation: {
             description: "Landing page de Braided: estampado, sublimado y vinilo textil para indumentaria en Mendoza, para empresas, eventos y particulares.",
+            arialLabel: "Ver demostración de la SPA de braided",
         },
         buttomTag: "Ver Demo",
     },

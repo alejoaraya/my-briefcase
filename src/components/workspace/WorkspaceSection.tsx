@@ -94,8 +94,8 @@ export const WorkspaceSection = () => {
         </div>
 
         {/* experience */}
-        <div className='flex flex-col gap-14 lg:grid lg:grid-cols-2 lg:gap-12'>
-          <div className='flex flex-col col-span-1 gap-2'>
+        <div className='flex flex-col gap-14 lg:flex-row lg:justify-between'>
+          <div className='flex flex-col gap-2'>
             <h4 className='uppercase card-title text-xl '>
               {t.workspace.studyUniversitaryInformation.title}
             </h4>
@@ -117,7 +117,7 @@ export const WorkspaceSection = () => {
 
             </div>
           </div>
-          <div className='flex flex-col col-span-1 gap-2 '>
+          <div className='flex flex-col  gap-2 '>
             <h4 className='card-title text-xl'>
               {t.workspace.supportStudyInformation.title}
             </h4>

@@ -57,15 +57,19 @@ export const en = {
         title: "FEATURED PROJECTS",
         cachavachaERPInformation: {
             description: "Web platform for digitizing and managing costume rentals. Centralizes customers, stock, bookings, and receipts in real time.",
+            arialLabel: "View demo of Cachavacha's ERP",
         },
         raxtechSPAInformation: {
             description: "Landing page for RaxTech, a tech solutions studio: websites, management systems, task automation, and AI assistants.",
+            arialLabel: "View demo of Raxtech's SPA",
         },
         cachavachaSPAInformation: {
             description: "Landing page for a costume rental business in Mendoza. Showcases the character catalog for themed parties.",
+            arialLabel: "View demo of Cachavacha's SPA",
         },
         braidedSPAInformation: {
             description: "Landing page for Braided: custom apparel printing and sublimation in Mendoza, for businesses, events, and individuals.",
+            arialLabel: "View demo of Braided's SPA",
         },
         buttomTag: "View Demo",
     },

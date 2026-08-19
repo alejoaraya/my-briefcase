@@ -19,6 +19,9 @@ export default defineConfig({
   },
   test: {
     environment: "jsdom",
-    globals: true
+    globals: true,
+    coverage: {
+      include: ['src/**/*.{ts,tsx}']
+    },
   },
 });

@@ -10,9 +10,11 @@ export const AboutSection = () => {
       id='about'
       title={t.about.title}
     >
-      <div className='grid grid-cols-1 gap-10 md:gap-20  lg:grid-cols-2'>
+      <div className='grid grid-cols-1 gap-10 
+      md:gap-20 
+      lg:grid-cols-2'>
         <div className='flex flex-col gap-8'>
-          <div className='flex flex-col gap-3 text-base'>
+          <div className='flex flex-col gap-3 text-base lg:text-lg '>
             <p>
               {t.about.firstParagraph}
             </p>
@@ -21,14 +23,16 @@ export const AboutSection = () => {
             </p>
           </div>
         </div>
+
         <img
           src="/assets/avatar/normal_avatar.webp"
           alt="personal_about_image"
           loading="lazy"
           height={384} width={'100%'}
-          className='flex  lg:place-self-center flex-col gap-4 shadow object-center place-items-center place-content-center rounded-4xl lg:w-[26rem] lg:py-5 h-96 lg:h-full' />
-
-
+          className='
+          flex  flex-col gap-4 object-cover shadow object-center place-items-center place-content-center rounded-4xl h-96
+          md:h-120
+          lg:place-self-center ' />
       </div>
     </ContentSection >
   );

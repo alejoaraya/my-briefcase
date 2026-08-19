@@ -7,6 +7,7 @@ type ButtonSize = "w-32" | "w-48" | "w-64" | "full";
 
 interface Props {
   text: string;
+  ariaLabel?: string; //! add arial label as obligatory
   url?: string;
   blank?: boolean;
   variant?: ButtonVariant;
@@ -57,12 +58,14 @@ export const Button = ({
   fullWidth = false,
   disabled = false,
   className,
+  ariaLabel,
   onClick,
 }: Props) => {
   return (
     <motion.a
       variants={buttonVariants}
       whileHover={'hover'}
+      aria-label={ariaLabel}
       whileTap={'tap'}
       target={blank ? "_blank" : undefined}
       rel={blank ? "noreferrer" : undefined}
