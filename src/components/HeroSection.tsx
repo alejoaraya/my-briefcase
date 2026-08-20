@@ -48,12 +48,11 @@ export const HeroSection = () => {
       " id="home">
 
         <div className="grid grid-cols-1 gap-4 sm:gap-5  place-items-center
-        
         sm:grid-cols-2
         lg:grid-cols-1 lg:h-full
         ">
           <div className='avatar w-70 
-          lg:w-100
+          lg:w-88
           '>
             <img
               src='/assets/avatar/cartoon_avatar.webp'
@@ -84,11 +83,12 @@ export const HeroSection = () => {
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, ease: 'easeOut' }}
-              className="text-lg sm:text-base leading-relaxed">
+              className="text-lg sm:text-base leading-relaxed lg:text-lg">
               {t.hero.shortDescription}
             </motion.p>
           </div>
-          <div className="flex flex-col gap-6">
+
+          <div className="flex flex-col gap-6 ">
             <div className="flex flex-col gap-2 w-full">
               <Button
                 icon={ArrowUpRight}

@@ -71,14 +71,12 @@ export const ProjectItem = ({
       variants={cardVariants}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{ once: true, amount: 0.5 }}
     >
-
-
       <div
         className={cn(
-          "card card-body h-full p-0  grid grid-cols-1 gap-5 shadow-sm bg-base-100 border border-primary rounded-3xl ease-in transition-all duration-200 lg:hover:bg-primary/5 ",
-          outstanding && "bg-primary/3",
+          "card card-body h-full p-0 border  grid grid-cols-1 gap-5 shadow-sm bg-base-100  border-primary rounded-3xl ease-in transition-all duration-200 lg:hover:bg-primary/5 ",
+          outstanding && "bg-primary/3  border-2 ",
         )}
       >
 
