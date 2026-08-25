@@ -1,0 +1,10 @@
+# Dokploy detecta este archivo y despliega el servicio automáticamente.
+# El puerto/dominio se configura desde el dashboard de Dokploy (Domains),
+# apuntando al puerto interno del contenedor (80), no hace falta mapear
+# un puerto de host aquí: Dokploy enruta el tráfico con Traefik.
+services:
+  my-briefcase:
+    build: .
+    expose:
+      - "80"
+    restart: unless-stopped
