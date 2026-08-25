@@ -24,7 +24,7 @@ export const ProjectsSection = () => {
         <ProjectItem
           ariaLabel={t.projects.cachavachaERPInformation.arialLabel}
           title='Cachavacha' badgeName="ERP"
-          info_url={{ github: "https://github.com/raxtech-solution/Cachavacha-Frontend", demo: "https://cachavacha-frontend.vercel.app/", figma: 'https://www.figma.com/design/KpFxefqx0JrECgQTGa5qsD/Cachavacha-ERP?node-id=0-1&t=U0bjNoQKK2pqlgWP-1' }}
+          info_url={{ github: "https://github.com/raxtech-solution/Cachavacha-Frontend", demo: "https://cachavacha-demo-vmcxl3-78262f-72-60-8-104.sslip.io/", figma: 'https://www.figma.com/design/KpFxefqx0JrECgQTGa5qsD/Cachavacha-ERP?node-id=0-1&t=U0bjNoQKK2pqlgWP-1' }}
           image_url="/assets/projects-images/cacha_erp.webp"
           demoButtonText={t.projects.buttomTag}
           description={t.projects.cachavachaERPInformation.description}
