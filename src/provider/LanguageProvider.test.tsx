@@ -4,7 +4,6 @@ import { MemoryRouter, useLocation } from "react-router";
 import { LanguageProvider } from "./LanguageProvider";
 import { useTranslate } from "../hooks/useTranslate";
 
-// Componente auxiliar para leer el contexto de idioma desde dentro del provider
 const Consumer = () => {
   const { lang, switchLang, t } = useTranslate();
   return (
@@ -16,7 +15,6 @@ const Consumer = () => {
   );
 };
 
-// Componente auxiliar para leer a qué ruta navegó react-router
 const LocationDisplay = () => {
   const location = useLocation();
   return <div data-testid="location">{location.pathname}</div>;
@@ -34,8 +32,6 @@ const renderAt = (initialPath: string) =>
 
 describe("LanguageProvider", () => {
   beforeEach(() => {
-    // El provider actualiza metatags existentes por selector; sin ellos en
-    // el DOM los asserts de SEO no podrían verificar nada.
     document.head.innerHTML = `
       <meta name="description" content="" />
       <link rel="canonical" href="" />

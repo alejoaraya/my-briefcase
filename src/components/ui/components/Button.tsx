@@ -61,10 +61,7 @@ export const Button = ({
   ariaLabel,
   onClick,
 }: Props) => {
-  // Sin url (undefined/"") no hay a donde navegar: si no lo tratamos como
-  // disabled, queda un <a href=""> que al clickearlo recarga la página
-  // actual en vez de no hacer nada. Esto puede pasar con links opcionales
-  // (ej: Figma todavía no hecho) que no llegan a pasar una url real.
+
   const isDisabled = disabled || !url;
 
   return (
