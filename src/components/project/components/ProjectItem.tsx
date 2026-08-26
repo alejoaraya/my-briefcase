@@ -29,7 +29,8 @@ interface Props {
   image_url?: string;
   outstanding?: boolean;
   badgeName: string;
-  demoButtonText: string
+  demoButtonText: string;
+  index?: number; // posición dentro de la grilla, para escalonar el delay
 }
 
 export const ProjectItem = ({
@@ -42,6 +43,7 @@ export const ProjectItem = ({
   badgeName,
   demoButtonText,
   ariaLabel,
+  index = 0,
 }:
   Props) => {
 
@@ -62,6 +64,10 @@ export const ProjectItem = ({
       transition: {
         duration: 0.6,
         ease: "easeOut",
+        // stagger manual: cada card entra un poco después que la anterior
+        // dentro de la misma fila/tanda visible, sin depender de que TODA
+        // la grilla esté en pantalla a la vez.
+        delay: index * 0.15,
       },
     },
   };
@@ -71,7 +77,7 @@ export const ProjectItem = ({
       variants={cardVariants}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.5 }}
+      viewport={{ once: true, amount: 0.3 }}
     >
       <div
         className={cn(
