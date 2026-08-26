@@ -63,4 +63,53 @@ describe('Button', () => {
 
     expect(button?.firstElementChild?.tagName).toBe("svg")
   })
+
+  it('should not render a usable href when no url is provided (avoids an <a href=""> that reloads the page)', () => {
+    const { container } = render(<Button text="buttonNameTest" />)
+
+    const button = container.querySelector('a')
+
+    expect(button?.getAttribute('href')).toBeNull()
+    expect(button?.getAttribute('aria-disabled')).toBe('true')
+  })
+
+  it('should not call onClick when no url is provided', async () => {
+    const user = userEvent.setup()
+    const onClickMocked = vi.fn()
+
+    render(<Button text="buttonNameTest" onClick={onClickMocked} />)
+
+    await user.click(screen.getByText('buttonNameTest'))
+
+    expect(onClickMocked).toHaveBeenCalledTimes(0)
+  })
+
+  it('should call onClick when a url is provided and it is not disabled', async () => {
+    const user = userEvent.setup()
+    const onClickMocked = vi.fn()
+
+    render(<Button text="buttonNameTest" url="https://www.google.com/" onClick={onClickMocked} />)
+
+    await user.click(screen.getByText('buttonNameTest'))
+
+    expect(onClickMocked).toHaveBeenCalledTimes(1)
+  })
+
+  it('should open in a new tab when blank is true', () => {
+    const { container } = render(<Button text="buttonNameTest" url="https://www.google.com/" blank />)
+
+    const button = container.querySelector('a')
+
+    expect(button?.getAttribute('target')).toBe('_blank')
+    expect(button?.getAttribute('rel')).toBe('noreferrer')
+  })
+
+  it('should not open in a new tab when blank is not set', () => {
+    const { container } = render(<Button text="buttonNameTest" url="https://www.google.com/" />)
+
+    const button = container.querySelector('a')
+
+    expect(button?.getAttribute('target')).toBeNull()
+    expect(button?.getAttribute('rel')).toBeNull()
+  })
 })
