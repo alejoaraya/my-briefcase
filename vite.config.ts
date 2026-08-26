@@ -20,6 +20,10 @@ export default defineConfig({
   test: {
     environment: "jsdom",
     globals: true,
+    // Sin esto, @testing-library/jest-dom nunca se registraba: los matchers
+    // como toBeInTheDocument() no existían pese a estar instalado y con un
+    // archivo de setup ya escrito (src/test/setup.ts) que nadie enganchaba.
+    setupFiles: ["./src/test/setup.ts"],
     coverage: {
       include: ['src/**/*.{ts,tsx}']
     },

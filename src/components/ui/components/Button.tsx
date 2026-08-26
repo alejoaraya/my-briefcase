@@ -49,7 +49,7 @@ const buttonVariants: Variants = {
 
 export const Button = ({
   text,
-  url = "",
+  url,
   blank,
   variant = "solid",
   size = "w-48",
@@ -61,6 +61,12 @@ export const Button = ({
   ariaLabel,
   onClick,
 }: Props) => {
+  // Sin url (undefined/"") no hay a donde navegar: si no lo tratamos como
+  // disabled, queda un <a href=""> que al clickearlo recarga la página
+  // actual en vez de no hacer nada. Esto puede pasar con links opcionales
+  // (ej: Figma todavía no hecho) que no llegan a pasar una url real.
+  const isDisabled = disabled || !url;
+
   return (
     <motion.a
       variants={buttonVariants}
@@ -69,11 +75,11 @@ export const Button = ({
       whileTap={'tap'}
       target={blank ? "_blank" : undefined}
       rel={blank ? "noreferrer" : undefined}
-      href={disabled ? undefined : url}
-      aria-disabled={disabled}
+      href={isDisabled ? undefined : url}
+      aria-disabled={isDisabled}
       onClick={(e) => {
         e.stopPropagation();
-        if (disabled) {
+        if (isDisabled) {
           e.preventDefault();
           return;
         }
@@ -83,7 +89,7 @@ export const Button = ({
         "btn h-12 gap-2 rounded-field border-[1.5px] px-5 text-lg lato-regular normal-case shadow-none transition-colors",
         variantClasses[variant],
         fullWidth ? "w-full" : sizeClasses[size],
-        disabled && "opacity-50 pointer-events-none",
+        isDisabled && "opacity-50 pointer-events-none",
         className
       )}
     >
