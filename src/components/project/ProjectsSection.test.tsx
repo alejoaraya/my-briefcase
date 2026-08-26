@@ -37,8 +37,6 @@ describe("ProjectsSection", () => {
 
     render(<ProjectsSection />);
 
-    // El ícono de Github trae su propio <title>Github</title> (svgr), así
-    // que acotamos la búsqueda al <span> de texto del botón.
     const githubLinks = screen
       .getAllByText("Github", { selector: "span" })
       .map((el) => el.closest("a")?.getAttribute("href"));

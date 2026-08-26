@@ -45,9 +45,6 @@ describe("ProjectItem", () => {
   it("wires the demo, github and figma buttons to their urls", () => {
     render(<ProjectItem {...baseProps} />);
 
-    // Los SVG de estos íconos traen su propio <title>Github</title> /
-    // <title>Figma</title> para accesibilidad, que también matchea con
-    // getByText: por eso acotamos la búsqueda al <span> de texto del botón.
     expect(
       screen.getByText("Ver Demo", { selector: "span" }).closest("a")?.getAttribute("href")
     ).toBe("https://example-demo.com");
@@ -88,8 +85,6 @@ describe("ProjectItem", () => {
   it("renders every technology passed in the stack", () => {
     render(<ProjectItem {...baseProps} />);
 
-    // Mismo motivo que arriba: el <svg> de cada tecnología trae su propio
-    // <title>React</title>, así que acotamos al <span> con el nombre.
     expect(screen.getByText("React", { selector: "span" })).toBeInTheDocument();
     expect(screen.getByText("TypeScript", { selector: "span" })).toBeInTheDocument();
   });
