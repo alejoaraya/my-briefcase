@@ -12,6 +12,7 @@ import {
   MysqlIcon,
   PostmanIcon,
   ReactIcon,
+  ReduxIcon,
   SassIcon,
   SpringbootIcon,
   SwaggerIcon,
@@ -29,6 +30,7 @@ const stacksFontend: Stack[] = [
   { title: "TypeScript", icon: TypescriptIcon, isImportant: true },
   { title: "Tailwind.css", icon: TailwindcssIcon, isImportant: true },
   { title: "JavaScript", icon: JavascriptIcon, isImportant: true },
+  { title: "Redux", icon: ReduxIcon },
   { title: "HTML", icon: Html5Icon },
   { title: "CSS", icon: CssIcon },
   { title: "Sass", icon: SassIcon },
@@ -48,6 +50,17 @@ const stacksTools: Stack[] = [
   { title: "Docker", icon: DockerIcon, isImportant: true },
   { title: "GitHub", icon: GithubIcon },
   { title: "Postman", icon: PostmanIcon },
+]
+// Herramientas de soporte técnico / automatización del CV que todavía no
+// tienen ícono propio en el proyecto (src/assets/icons): se muestran como
+// badges de solo texto, igual que ya se hace con softSkillBadges.
+const stacksSupport: Stack[] = [
+  { title: "OTRs", isImportant: true },
+  { title: "BMC Helix", isImportant: true },
+  { title: "N8N", isImportant: true },
+  { title: "Power Automate", isImportant: true },
+  { title: "Power Query" },
+  { title: "Power BI" },
 ]
 
 interface Stack {
@@ -100,6 +113,20 @@ export const StackSection = () => {
           <div className='flex flex-row flex-wrap gap-3 lg:gap-x-4 '>
             {
               stacksTools.map((stack, index) => (
+                <StackItem key={`${stack.title}-${index}`} stack={stack} />
+              ))
+            }
+          </div>
+        </div>
+
+        <div className="flex gap-2.5 flex-col">
+          <div className="flex items-center gap-9">
+            <div className='w-3 h-3 status status-primary'></div>
+            <h3 className="text-xl lato-bold">{t.skills.supportTag}</h3>
+          </div>
+          <div className='flex flex-row flex-wrap gap-3 lg:gap-x-4 '>
+            {
+              stacksSupport.map((stack, index) => (
                 <StackItem key={`${stack.title}-${index}`} stack={stack} />
               ))
             }
