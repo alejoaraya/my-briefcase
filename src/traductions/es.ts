@@ -21,22 +21,22 @@ export const es = {
             enterprise: 'KONECTA',
             dateStart: 'Jun 2025',
             dateEnd: 'Actualidad',
-            desctiption: 'Atención y registro de incidencias técnicas, soporte remoto en software y hardware, escalamiento de problemas a nivel superior, seguimiento y cierre de tickets, y documentación de soluciones en la base de conocimientos.',
+            desctiption: 'Asistencia técnica y resolución de incidentes de primer nivel para usuarios del sector de telecomunicaciones, gestión y documentación de tickets asegurando el seguimiento hasta la resolución final, y aplicación de protocolos de escalamiento para fallas complejas con orientación a los usuarios en configuraciones y conectividad.',
         },
         devJobInformation: {
-            title: 'Desarrollador Web',
-            enterprise: 'RED DE SALUD TECNOLÓGICA (RST)',
-            dateStart: 'May 2023',
-            dateEnd: 'Jul 2024',
-            desctiption: 'Colaboración en el desarrollo de la interfaz de usuario, desarrollo de componentes de React, integración de APIs, optimización del rendimiento y mantenimiento del código.',
+            title: 'Soporte de Software y Desarrollador Freelance',
+            enterprise: 'RaxTech',
+            dateStart: 'Jul 2024',
+            dateEnd: 'Actualidad',
+            desctiption: 'Diseño, desarrollo e implementación de servicios de software y automatizaciones a medida para PYMES, integración de herramientas de inteligencia artificial para optimizar tareas operativas y flujo de trabajo de los clientes, y soporte técnico preventivo y correctivo de las aplicaciones desarrolladas, incluyendo la creación de tests unitarios para asegurar la estabilidad.',
 
         },
         supportJobInformation: {
             title: 'Mantenimiento y Reparación de Computadoras',
             enterprise: 'Emprendimiento',
-            dateStart: 'Mar 2019',
+            dateStart: 'Feb 2021',
             dateEnd: 'Actualidad',
-            desctiption: 'Resolución de problemas de software, armado de PC, recuperación de datos y mantenimiento de servidores.',
+            desctiption: 'Diagnóstico y resolución de fallas de software y hardware a nivel de componentes.',
 
         },
         subtitle: "Estudios",
@@ -77,6 +77,7 @@ export const es = {
         title: 'HABILIDADES',
         backendTag: "Back-end / Base de datos",
         toolsTag: "Herramientas",
+        supportTag: "Soporte / Automatización",
         softSkillTag: "Habilidades blandas",
         softSkillBadges: [
             { title: 'Resolución de Problemas', isImportant: true },

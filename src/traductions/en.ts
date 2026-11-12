@@ -21,22 +21,22 @@ export const en = {
             enterprise: 'KONECTA',
             dateStart: 'Jun 2025',
             dateEnd: 'Present',
-            desctiption: 'Handling and logging of technical incidents, remote support for software and hardware, issue escalation, ticket follow-up and closure, and documentation of solutions in the knowledge base.',
+            desctiption: 'First-level technical support and incident resolution for telecommunications customers, ticket management and documentation ensuring follow-up through final resolution, and escalation protocols for complex issues along with guidance on configuration and connectivity.',
         },
         devJobInformation: {
-            title: 'Web Developer',
-            enterprise: 'RED DE SALUD TECNOLÓGICA (RST)',
-            dateStart: 'May 2023',
-            dateEnd: 'Jul 2024',
-            desctiption: 'Collaboration on user interface development, React component development, API integration, performance optimization, and code maintenance.',
+            title: 'Freelance Software Support & Developer',
+            enterprise: 'RaxTech',
+            dateStart: 'Jul 2024',
+            dateEnd: 'Present',
+            desctiption: 'Design, development and implementation of custom software services and automations for small and medium businesses, integration of AI tools to optimize operational tasks and client workflows, and preventive and corrective technical support for the applications built, including unit tests to ensure stability.',
 
         },
         supportJobInformation: {
             title: 'Computer Maintenance and Repair',
             enterprise: 'Self-employed',
-            dateStart: 'Mar 2019',
+            dateStart: 'Feb 2021',
             dateEnd: 'Present',
-            desctiption: 'Software troubleshooting, PC assembly, data recovery, and server maintenance.',
+            desctiption: 'Diagnosis and resolution of software and hardware failures at the component level.',
 
         },
         subtitle: "Education",
@@ -77,6 +77,7 @@ export const en = {
         title: 'SKILLS',
         backendTag: "Back-end / Database",
         toolsTag: "Tools",
+        supportTag: "Support / Automation",
         softSkillTag: "Soft Skills",
         softSkillBadges: [
             { title: 'Problem Solving', isImportant: true },

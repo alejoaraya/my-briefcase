@@ -43,7 +43,7 @@ export const ProjectsSection = () => {
           index={1}
           title='RaxTech' badgeName="SPA"
           demoButtonText={t.projects.buttomTag}
-          info_url={{ github: "https://github.com/raxtech-solution/raxtech-landing-page", demo: "https://raxtech-landing-page.vercel.app/", figma: "https://www.figma.com/design/R6abK0kTIsDJX0Sdp7SwS4/RaxTech-Docs?node-id=1-4&t=U0bjNoQKK2pqlgWP-1" }}
+          info_url={{ github: "https://github.com/raxtech-solution/raxtech-landing-page", demo: "https://raxtech.com.ar/", figma: "https://www.figma.com/design/R6abK0kTIsDJX0Sdp7SwS4/RaxTech-Docs?node-id=1-4&t=U0bjNoQKK2pqlgWP-1" }}
           image_url="/assets/projects-images/rax_tech_spa.webp"
           description={t.projects.raxtechSPAInformation.description}
           stack={[
@@ -58,7 +58,7 @@ export const ProjectsSection = () => {
           ariaLabel={t.projects.cachavachaSPAInformation.arialLabel}
           index={2}
           title='Cachavacha' badgeName="SPA"
-          info_url={{ github: "https://github.com/raxtech-solution/cachavacha-landing-page", demo: 'https://cachavacha-landing-page.vercel.app/', figma: "https://www.cachavacha-figma-hasnt-done-yet" }}
+          info_url={{ github: "https://github.com/raxtech-solution/cachavacha-landing-page", demo: 'https://disfracescachavacha.com', figma: "https://www.cachavacha-figma-hasnt-done-yet" }}
           demoButtonText={t.projects.buttomTag}
           description={t.projects.cachavachaSPAInformation.description}
           image_url="/assets/projects-images/cacha_spa.webp"

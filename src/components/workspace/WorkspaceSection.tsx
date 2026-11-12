@@ -1,11 +1,10 @@
 import { ContentSection } from "../ui";
 
 import {
-  FigmaIcon,
   JavaIcon,
+  Junit5Icon,
   MysqlIcon,
   ReactIcon,
-  TailwindcssIcon,
   TypescriptIcon,
 } from "../../assets/icons";
 
@@ -61,10 +60,10 @@ export const WorkspaceSection = () => {
             date={t.workspace.devJobInformation.dateStart + " - " + t.workspace.devJobInformation.dateEnd}
             description={t.workspace.devJobInformation.desctiption}
             stack={[
+              { element: TypescriptIcon, name: "TypeScript " },
               { element: ReactIcon, name: "React " },
-              { element: TailwindcssIcon, name: "Tailwind.css " },
-              { element: TypescriptIcon, name: "TS / JS " },
-              { element: FigmaIcon, name: "Figma " }
+              { element: JavaIcon, name: "Java " },
+              { element: Junit5Icon, name: "JUnit5 " }
             ]}
             key={3}
           />

@@ -93,7 +93,7 @@ export const Button = ({
       {Icon && iconPosition === "left" && (
         <Icon className='w-6 h-6 shrink-0' />
       )}
-      <span className='leading-[22px]'>{text}</span>
+      <span className='leading-5.5'>{text}</span>
       {Icon && iconPosition === "right" && (
         <Icon className='w-6 h-6 shrink-0' />
       )}
